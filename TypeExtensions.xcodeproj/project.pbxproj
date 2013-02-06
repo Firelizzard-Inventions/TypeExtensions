@@ -25,10 +25,6 @@
 		420D1AD3165BF54D0097EE03 /* NSString+numberValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */; };
 		420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420D1AD5165BF54D0097EE03 /* NSString+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */; };
-		42918FFB1675403300B77B81 /* NSDictionaryEntrySetEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 42918FF91675403300B77B81 /* NSDictionaryEntrySetEntry.h */; };
-		42918FFC1675403300B77B81 /* NSDictionaryEntrySetEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42918FFA1675403300B77B81 /* NSDictionaryEntrySetEntry.m */; };
-		42918FFF1675410400B77B81 /* NSDictionary+entrySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42918FFD1675410400B77B81 /* NSDictionary+entrySet.h */; };
-		429190001675410400B77B81 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42918FFE1675410400B77B81 /* NSDictionary+entrySet.m */; };
 		429A9C1F1662DC9D00C6068C /* NSObject+invocationForSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 429A9C1D1662DC9D00C6068C /* NSObject+invocationForSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		429A9C201662DC9D00C6068C /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A9C1E1662DC9D00C6068C /* NSObject+invocationForSelector.m */; };
 		42AC0B19165CA0B2002E846E /* Null.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AC0B16165C9FBB002E846E /* Null.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +34,14 @@
 		42BA0C3616707B2C0066DD1A /* NSString+urlValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */; };
 		42DFF307165DFBE6003F26DA /* NSData+stringValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFF305165DFBE6003F26DA /* NSData+stringValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DFF308165DFBE6003F26DA /* NSData+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF306165DFBE6003F26DA /* NSData+stringValue.m */; };
+		42F3D73416C1979300B353F7 /* NSObject_KVCUndefined.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73216C1979300B353F7 /* NSObject_KVCUndefined.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F3D73516C1979300B353F7 /* NSObject_KVCUndefined.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3D73316C1979300B353F7 /* NSObject_KVCUndefined.m */; };
+		42F3D73A16C197E000B353F7 /* NSDictionary+entrySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73616C197E000B353F7 /* NSDictionary+entrySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F3D73B16C197E000B353F7 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3D73716C197E000B353F7 /* NSDictionary+entrySet.m */; };
+		42F3D73C16C197E000B353F7 /* NSDictionaryEntrySetEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73816C197E000B353F7 /* NSDictionaryEntrySetEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F3D73D16C197E000B353F7 /* NSDictionaryEntrySetEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3D73916C197E000B353F7 /* NSDictionaryEntrySetEntry.m */; };
+		42F3D74016C1986C00B353F7 /* KVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73F16C1985600B353F7 /* KVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F3D74116C1986F00B353F7 /* Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73E16C1980000B353F7 /* Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,10 +70,6 @@
 		420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+numberValue.m"; sourceTree = "<group>"; };
 		420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+plistValue.h"; sourceTree = "<group>"; };
 		420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+plistValue.m"; sourceTree = "<group>"; };
-		42918FF91675403300B77B81 /* NSDictionaryEntrySetEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionaryEntrySetEntry.h; path = "Entry Set Extensions/NSDictionaryEntrySetEntry.h"; sourceTree = "<group>"; };
-		42918FFA1675403300B77B81 /* NSDictionaryEntrySetEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionaryEntrySetEntry.m; path = "Entry Set Extensions/NSDictionaryEntrySetEntry.m"; sourceTree = "<group>"; };
-		42918FFD1675410400B77B81 /* NSDictionary+entrySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+entrySet.h"; path = "Entry Set Extensions/NSDictionary+entrySet.h"; sourceTree = "<group>"; };
-		42918FFE1675410400B77B81 /* NSDictionary+entrySet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+entrySet.m"; path = "Entry Set Extensions/NSDictionary+entrySet.m"; sourceTree = "<group>"; };
 		429A9C1D1662DC9D00C6068C /* NSObject+invocationForSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+invocationForSelector.h"; path = "Other Extensions/NSObject+invocationForSelector.h"; sourceTree = "<group>"; };
 		429A9C1E1662DC9D00C6068C /* NSObject+invocationForSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+invocationForSelector.m"; path = "Other Extensions/NSObject+invocationForSelector.m"; sourceTree = "<group>"; };
 		42AC0B16165C9FBB002E846E /* Null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Null.h; sourceTree = "<group>"; };
@@ -78,6 +78,14 @@
 		42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlValue.m"; sourceTree = "<group>"; };
 		42DFF305165DFBE6003F26DA /* NSData+stringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+stringValue.h"; sourceTree = "<group>"; };
 		42DFF306165DFBE6003F26DA /* NSData+stringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+stringValue.m"; sourceTree = "<group>"; };
+		42F3D73216C1979300B353F7 /* NSObject_KVCUndefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObject_KVCUndefined.h; path = "KVC Extensions/NSObject_KVCUndefined.h"; sourceTree = "<group>"; };
+		42F3D73316C1979300B353F7 /* NSObject_KVCUndefined.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObject_KVCUndefined.m; path = "KVC Extensions/NSObject_KVCUndefined.m"; sourceTree = "<group>"; };
+		42F3D73616C197E000B353F7 /* NSDictionary+entrySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+entrySet.h"; path = "Other Extensions/NSDictionary+entrySet.h"; sourceTree = "<group>"; };
+		42F3D73716C197E000B353F7 /* NSDictionary+entrySet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+entrySet.m"; path = "Other Extensions/NSDictionary+entrySet.m"; sourceTree = "<group>"; };
+		42F3D73816C197E000B353F7 /* NSDictionaryEntrySetEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDictionaryEntrySetEntry.h; path = "Other Extensions/NSDictionaryEntrySetEntry.h"; sourceTree = "<group>"; };
+		42F3D73916C197E000B353F7 /* NSDictionaryEntrySetEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDictionaryEntrySetEntry.m; path = "Other Extensions/NSDictionaryEntrySetEntry.m"; sourceTree = "<group>"; };
+		42F3D73E16C1980000B353F7 /* Misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Misc.h; path = "Other Extensions/Misc.h"; sourceTree = "<group>"; };
+		42F3D73F16C1985600B353F7 /* KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KVC.h; path = "KVC Extensions/KVC.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +139,10 @@
 		420D1AA5165BF5020097EE03 /* TypeExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				429A9C1B1662DC7D00C6068C /* Other Extensions */,
 				420D1AB4165BF54D0097EE03 /* Null Extensions */,
 				420D1ABB165BF54D0097EE03 /* Value Extensions */,
-				42918FF71675400000B77B81 /* Entry Set Extensions */,
+				42F3D73116C196F800B353F7 /* KVC Extensions */,
+				429A9C1B1662DC7D00C6068C /* Other Extensions */,
 				420D1AA6165BF5020097EE03 /* Supporting Files */,
 			);
 			path = TypeExtensions;
@@ -187,24 +195,28 @@
 			path = "Value Extensions";
 			sourceTree = "<group>";
 		};
-		42918FF71675400000B77B81 /* Entry Set Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				42918FF91675403300B77B81 /* NSDictionaryEntrySetEntry.h */,
-				42918FFA1675403300B77B81 /* NSDictionaryEntrySetEntry.m */,
-				42918FFD1675410400B77B81 /* NSDictionary+entrySet.h */,
-				42918FFE1675410400B77B81 /* NSDictionary+entrySet.m */,
-			);
-			name = "Entry Set Extensions";
-			sourceTree = "<group>";
-		};
 		429A9C1B1662DC7D00C6068C /* Other Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				42F3D73E16C1980000B353F7 /* Misc.h */,
+				42F3D73616C197E000B353F7 /* NSDictionary+entrySet.h */,
+				42F3D73716C197E000B353F7 /* NSDictionary+entrySet.m */,
+				42F3D73816C197E000B353F7 /* NSDictionaryEntrySetEntry.h */,
+				42F3D73916C197E000B353F7 /* NSDictionaryEntrySetEntry.m */,
 				429A9C1D1662DC9D00C6068C /* NSObject+invocationForSelector.h */,
 				429A9C1E1662DC9D00C6068C /* NSObject+invocationForSelector.m */,
 			);
 			name = "Other Extensions";
+			sourceTree = "<group>";
+		};
+		42F3D73116C196F800B353F7 /* KVC Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42F3D73F16C1985600B353F7 /* KVC.h */,
+				42F3D73216C1979300B353F7 /* NSObject_KVCUndefined.h */,
+				42F3D73316C1979300B353F7 /* NSObject_KVCUndefined.m */,
+			);
+			name = "KVC Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +229,8 @@
 				42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */,
 				42AC0B19165CA0B2002E846E /* Null.h in Headers */,
 				42AC0B1A165CA0B5002E846E /* Value.h in Headers */,
+				42F3D74016C1986C00B353F7 /* KVC.h in Headers */,
+				42F3D74116C1986F00B353F7 /* Misc.h in Headers */,
 				429A9C1F1662DC9D00C6068C /* NSObject+invocationForSelector.h in Headers */,
 				42BA0C3516707B2C0066DD1A /* NSString+urlValue.h in Headers */,
 				420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */,
@@ -228,8 +242,9 @@
 				420D1AD0165BF54D0097EE03 /* NSString+isNumber.h in Headers */,
 				420D1AD2165BF54D0097EE03 /* NSString+numberValue.h in Headers */,
 				420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */,
-				42918FFB1675403300B77B81 /* NSDictionaryEntrySetEntry.h in Headers */,
-				42918FFF1675410400B77B81 /* NSDictionary+entrySet.h in Headers */,
+				42F3D73A16C197E000B353F7 /* NSDictionary+entrySet.h in Headers */,
+				42F3D73416C1979300B353F7 /* NSObject_KVCUndefined.h in Headers */,
+				42F3D73C16C197E000B353F7 /* NSDictionaryEntrySetEntry.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +322,9 @@
 				42DFF308165DFBE6003F26DA /* NSData+stringValue.m in Sources */,
 				429A9C201662DC9D00C6068C /* NSObject+invocationForSelector.m in Sources */,
 				42BA0C3616707B2C0066DD1A /* NSString+urlValue.m in Sources */,
-				42918FFC1675403300B77B81 /* NSDictionaryEntrySetEntry.m in Sources */,
-				429190001675410400B77B81 /* NSDictionary+entrySet.m in Sources */,
+				42F3D73516C1979300B353F7 /* NSObject_KVCUndefined.m in Sources */,
+				42F3D73B16C197E000B353F7 /* NSDictionary+entrySet.m in Sources */,
+				42F3D73D16C197E000B353F7 /* NSDictionaryEntrySetEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
