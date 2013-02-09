@@ -11,5 +11,8 @@
 @interface NSObject_KVCUndefined : NSObject
 
 @property BOOL tryLowerCase;
+@property BOOL observeLowerCase;
+
+- (NSArray *)redefinedKeys;
 
 @end

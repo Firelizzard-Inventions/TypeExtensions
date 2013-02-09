@@ -26,14 +26,19 @@
 
 - (void)dealloc
 {
+	[_internal_set unlock];
+	[_internal_get unlock];
+	
 	[undefined release];
 	[_internal_set release];
 	[_internal_get release];
 	[super dealloc];
 }
 
-- (void)didInitialize { ; }
-- (void)willUninitialize { ; }
+- (NSArray *)redefinedKeys
+{
+	return undefined.allKeys;
+}
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
@@ -53,6 +58,13 @@
 	} else {
 		return [undefined valueForKey:key];
 	}
+}
+
+- (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context
+{
+	if (self.observeLowerCase)
+		keyPath = keyPath.lowercaseString;
+	[super addObserver:observer forKeyPath:keyPath options:options context:context];
 }
 
 @end
