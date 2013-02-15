@@ -6,6 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		42BEDB6C16CE2B83006DF652 /* TE Docs */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 42BEDB6F16CE2B83006DF652 /* Build configuration list for PBXAggregateTarget "TE Docs" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "TE Docs";
+			productName = "TE Docs";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4202873316CC241600F2C92A /* NSString+dateValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873116CC241600F2C92A /* NSString+dateValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4202873416CC241600F2C92A /* NSString+dateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873216CC241600F2C92A /* NSString+dateValue.m */; };
@@ -327,6 +340,7 @@
 			projectRoot = "";
 			targets = (
 				420D1A9B165BF5020097EE03 /* TypeExtensions */,
+				42BEDB6C16CE2B83006DF652 /* TE Docs */,
 			);
 		};
 /* End PBXProject section */
@@ -463,6 +477,20 @@
 			};
 			name = Release;
 		};
+		42BEDB6D16CE2B83006DF652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42BEDB6E16CE2B83006DF652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +511,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		42BEDB6F16CE2B83006DF652 /* Build configuration list for PBXAggregateTarget "TE Docs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BEDB6D16CE2B83006DF652 /* Debug */,
+				42BEDB6E16CE2B83006DF652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
