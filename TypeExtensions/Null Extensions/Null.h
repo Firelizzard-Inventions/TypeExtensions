@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Lens Flare. All rights reserved.
 //
 
-#import "NSObject+isNull.h"
-#import "NSString+isEmpty.h"
-#import "NSArray+orNull.h"
-#import "NSString+orNull.h"
+#import <TypeExtensions/NSObject+isNull.h>
+#import <TypeExtensions/NSString+isEmpty.h>
+#import <TypeExtensions/NSArray+orNull.h>
+#import <TypeExtensions/NSString+orNull.h>

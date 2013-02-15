@@ -12,7 +12,10 @@
 
 - (NSURL *)urlValue
 {
-	return [NSURL URLWithString:self];
+	NSURL * url = [NSURL URLWithString:self];
+	if (!url.scheme)
+		url = [NSURL fileURLWithPath:self];
+	return url;
 }
 
 @end

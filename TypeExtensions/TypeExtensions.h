@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Lens Flare. All rights reserved.
 //
 
-#import "Null.h"
-#import "Value.h"
-#import "KVC.h"
-
-#import "NSObject+invocationForSelector.h"
+#import <TypeExtensions/Null.h>
+#import <TypeExtensions/Value.h>
+#import <TypeExtensions/KVC.h>

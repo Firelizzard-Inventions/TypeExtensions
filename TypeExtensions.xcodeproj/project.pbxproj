@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4202873316CC241600F2C92A /* NSString+dateValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873116CC241600F2C92A /* NSString+dateValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4202873416CC241600F2C92A /* NSString+dateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873216CC241600F2C92A /* NSString+dateValue.m */; };
+		4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873516CC245E00F2C92A /* NSDate+stringValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4202873816CC245E00F2C92A /* NSDate+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873616CC245E00F2C92A /* NSDate+stringValue.m */; };
 		420D1AA0165BF5020097EE03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420D1A9F165BF5020097EE03 /* Cocoa.framework */; };
 		420D1AAA165BF5020097EE03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 420D1AA8165BF5020097EE03 /* InfoPlist.strings */; };
 		420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AB5165BF54D0097EE03 /* NSArray+orNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,12 +34,14 @@
 		429A9C1F1662DC9D00C6068C /* NSObject+invocationForSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 429A9C1D1662DC9D00C6068C /* NSObject+invocationForSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		429A9C201662DC9D00C6068C /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A9C1E1662DC9D00C6068C /* NSObject+invocationForSelector.m */; };
 		42AC0B19165CA0B2002E846E /* Null.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AC0B16165C9FBB002E846E /* Null.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42AC0B1A165CA0B5002E846E /* Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AC0B18165CA04B002E846E /* Value.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AAC165BF5020097EE03 /* TypeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42BA0C3516707B2C0066DD1A /* NSString+urlValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BA0C3316707B2C0066DD1A /* NSString+urlValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42BA0C3616707B2C0066DD1A /* NSString+urlValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */; };
+		42D8076016CE206A002885D0 /* Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873016CC23F900F2C92A /* Value.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DFF307165DFBE6003F26DA /* NSData+stringValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFF305165DFBE6003F26DA /* NSData+stringValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DFF308165DFBE6003F26DA /* NSData+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF306165DFBE6003F26DA /* NSData+stringValue.m */; };
+		42F0174216C88FB700B37419 /* NSNotificationCenter+errorCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F0174016C88FB700B37419 /* NSNotificationCenter+errorCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F0174316C88FB700B37419 /* NSNotificationCenter+errorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F0174116C88FB700B37419 /* NSNotificationCenter+errorCenter.m */; };
 		42F3D73416C1979300B353F7 /* NSObject_KVCUndefined.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73216C1979300B353F7 /* NSObject_KVCUndefined.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F3D73516C1979300B353F7 /* NSObject_KVCUndefined.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F3D73316C1979300B353F7 /* NSObject_KVCUndefined.m */; };
 		42F3D73A16C197E000B353F7 /* NSDictionary+entrySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F3D73616C197E000B353F7 /* NSDictionary+entrySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +53,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4202873016CC23F900F2C92A /* Value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Value.h; sourceTree = "<group>"; };
+		4202873116CC241600F2C92A /* NSString+dateValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+dateValue.h"; sourceTree = "<group>"; };
+		4202873216CC241600F2C92A /* NSString+dateValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+dateValue.m"; sourceTree = "<group>"; };
+		4202873516CC245E00F2C92A /* NSDate+stringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+stringValue.h"; sourceTree = "<group>"; };
+		4202873616CC245E00F2C92A /* NSDate+stringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+stringValue.m"; sourceTree = "<group>"; };
 		420D1A9C165BF5020097EE03 /* TypeExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TypeExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		420D1A9F165BF5020097EE03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		420D1AA2165BF5020097EE03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -77,11 +88,12 @@
 		429A9C1D1662DC9D00C6068C /* NSObject+invocationForSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+invocationForSelector.h"; path = "Other Extensions/NSObject+invocationForSelector.h"; sourceTree = "<group>"; };
 		429A9C1E1662DC9D00C6068C /* NSObject+invocationForSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+invocationForSelector.m"; path = "Other Extensions/NSObject+invocationForSelector.m"; sourceTree = "<group>"; };
 		42AC0B16165C9FBB002E846E /* Null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Null.h; sourceTree = "<group>"; };
-		42AC0B18165CA04B002E846E /* Value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Value.h; sourceTree = "<group>"; };
 		42BA0C3316707B2C0066DD1A /* NSString+urlValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+urlValue.h"; sourceTree = "<group>"; };
 		42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlValue.m"; sourceTree = "<group>"; };
 		42DFF305165DFBE6003F26DA /* NSData+stringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+stringValue.h"; sourceTree = "<group>"; };
 		42DFF306165DFBE6003F26DA /* NSData+stringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+stringValue.m"; sourceTree = "<group>"; };
+		42F0174016C88FB700B37419 /* NSNotificationCenter+errorCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+errorCenter.h"; path = "Notification Extensions/NSNotificationCenter+errorCenter.h"; sourceTree = "<group>"; };
+		42F0174116C88FB700B37419 /* NSNotificationCenter+errorCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+errorCenter.m"; path = "Notification Extensions/NSNotificationCenter+errorCenter.m"; sourceTree = "<group>"; };
 		42F3D73216C1979300B353F7 /* NSObject_KVCUndefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObject_KVCUndefined.h; path = "KVC Extensions/NSObject_KVCUndefined.h"; sourceTree = "<group>"; };
 		42F3D73316C1979300B353F7 /* NSObject_KVCUndefined.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObject_KVCUndefined.m; path = "KVC Extensions/NSObject_KVCUndefined.m"; sourceTree = "<group>"; };
 		42F3D73616C197E000B353F7 /* NSDictionary+entrySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+entrySet.h"; path = "Other Extensions/NSDictionary+entrySet.h"; sourceTree = "<group>"; };
@@ -143,9 +155,10 @@
 		420D1AA5165BF5020097EE03 /* TypeExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				42F0173F16C88F8E00B37419 /* Notification Extensions */,
 				420D1AB4165BF54D0097EE03 /* Null Extensions */,
-				420D1ABB165BF54D0097EE03 /* Value Extensions */,
 				42F3D73116C196F800B353F7 /* KVC Extensions */,
+				420D1ABB165BF54D0097EE03 /* Value Extensions */,
 				429A9C1B1662DC7D00C6068C /* Other Extensions */,
 				420D1AA6165BF5020097EE03 /* Supporting Files */,
 			);
@@ -182,7 +195,7 @@
 		420D1ABB165BF54D0097EE03 /* Value Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				42AC0B18165CA04B002E846E /* Value.h */,
+				4202873016CC23F900F2C92A /* Value.h */,
 				420D1AC0165BF54D0097EE03 /* NSString+isNumber.h */,
 				420D1AC1165BF54D0097EE03 /* NSString+isNumber.m */,
 				42BA0C3316707B2C0066DD1A /* NSString+urlValue.h */,
@@ -197,6 +210,10 @@
 				420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */,
 				420D1ABC165BF54D0097EE03 /* NSDictionary+plistValue.h */,
 				420D1ABD165BF54D0097EE03 /* NSDictionary+plistValue.m */,
+				4202873116CC241600F2C92A /* NSString+dateValue.h */,
+				4202873216CC241600F2C92A /* NSString+dateValue.m */,
+				4202873516CC245E00F2C92A /* NSDate+stringValue.h */,
+				4202873616CC245E00F2C92A /* NSDate+stringValue.m */,
 			);
 			path = "Value Extensions";
 			sourceTree = "<group>";
@@ -213,6 +230,15 @@
 				429A9C1E1662DC9D00C6068C /* NSObject+invocationForSelector.m */,
 			);
 			name = "Other Extensions";
+			sourceTree = "<group>";
+		};
+		42F0173F16C88F8E00B37419 /* Notification Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42F0174016C88FB700B37419 /* NSNotificationCenter+errorCenter.h */,
+				42F0174116C88FB700B37419 /* NSNotificationCenter+errorCenter.m */,
+			);
+			name = "Notification Extensions";
 			sourceTree = "<group>";
 		};
 		42F3D73116C196F800B353F7 /* KVC Extensions */ = {
@@ -234,8 +260,8 @@
 			files = (
 				42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */,
 				42AC0B19165CA0B2002E846E /* Null.h in Headers */,
-				42AC0B1A165CA0B5002E846E /* Value.h in Headers */,
 				42F3D74016C1986C00B353F7 /* KVC.h in Headers */,
+				42D8076016CE206A002885D0 /* Value.h in Headers */,
 				42F3D74116C1986F00B353F7 /* Misc.h in Headers */,
 				429A9C1F1662DC9D00C6068C /* NSObject+invocationForSelector.h in Headers */,
 				42BA0C3516707B2C0066DD1A /* NSString+urlValue.h in Headers */,
@@ -252,6 +278,9 @@
 				42F3D73A16C197E000B353F7 /* NSDictionary+entrySet.h in Headers */,
 				42F3D73416C1979300B353F7 /* NSObject_KVCUndefined.h in Headers */,
 				42F3D73C16C197E000B353F7 /* NSDictionaryEntrySetEntry.h in Headers */,
+				42F0174216C88FB700B37419 /* NSNotificationCenter+errorCenter.h in Headers */,
+				4202873316CC241600F2C92A /* NSString+dateValue.h in Headers */,
+				4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +362,9 @@
 				42F3D73B16C197E000B353F7 /* NSDictionary+entrySet.m in Sources */,
 				42F3D73D16C197E000B353F7 /* NSDictionaryEntrySetEntry.m in Sources */,
 				4291FF3916C57EA4000538EF /* NSString+orNull.m in Sources */,
+				42F0174316C88FB700B37419 /* NSNotificationCenter+errorCenter.m in Sources */,
+				4202873416CC241600F2C92A /* NSString+dateValue.m in Sources */,
+				4202873816CC245E00F2C92A /* NSDate+stringValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

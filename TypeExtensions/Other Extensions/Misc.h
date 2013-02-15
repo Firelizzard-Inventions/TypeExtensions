@@ -6,6 +6,6 @@
 //  Copyright (c) 2013 Lens Flare. All rights reserved.
 //
 
-#import "NSDictionary+entrySet.h"
-#import "NSDictionaryEntrySetEntry.h"
-#import "NSObject+invocationForSelector.h"
+#import <TypeExtensions/NSDictionary+entrySet.h>
+#import <TypeExtensions/NSDictionaryEntrySetEntry.h>
+#import <TypeExtensions/NSObject+invocationForSelector.h>

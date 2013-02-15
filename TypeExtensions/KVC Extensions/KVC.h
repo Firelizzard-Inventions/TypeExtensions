@@ -6,4 +6,4 @@
 //  Copyright (c) 2013 Lens Flare. All rights reserved.
 //
 
-#import "NSObject_KVCUndefined.h"
+#import <TypeExtensions/NSObject_KVCUndefined.h>
