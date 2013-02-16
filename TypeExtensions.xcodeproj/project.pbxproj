@@ -324,7 +324,7 @@
 		420D1A92165BF5020097EE03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Lens Flare";
 			};
 			buildConfigurationList = 420D1A95165BF5020097EE03 /* Build configuration list for PBXProject "TypeExtensions" */;
@@ -480,6 +480,7 @@
 		42BEDB6D16CE2B83006DF652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -487,6 +488,7 @@
 		42BEDB6E16CE2B83006DF652 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -519,6 +521,7 @@
 				42BEDB6E16CE2B83006DF652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
