@@ -10,3 +10,5 @@
 #import <TypeExtensions/Value.h>
 #import <TypeExtensions/KVC.h>
 #import <TypeExtensions/Misc.h>
+
+#import <TypeExtensions/NSNotificationCenter+errorCenter.h>

@@ -7,3 +7,4 @@
 //
 
 #import <TypeExtensions/NSObject_KVCUndefined.h>
+#import <TypeExtensions/NSObject_KVCArrayForwarding.h>
