@@ -3,7 +3,7 @@
 //  TypeExtensions
 //
 //  Created by Ethan Reesor on 12/9/12.
-//  Copyright (c) 2012 Lens Flare. All rights reserved.
+//  Copyright (c) 2012 Lens Flare. Some rights reserved, see license.
 //
 
 #import "NSDictionary+entrySet.h"

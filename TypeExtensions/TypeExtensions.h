@@ -3,12 +3,14 @@
 //  TypeExtensions
 //
 //  Created by Ethan Reesor on 11/20/12.
-//  Copyright (c) 2012 Lens Flare. All rights reserved.
+//  Copyright (c) 2012 Lens Flare. Some rights reserved, see license.
 //
 
-#import <TypeExtensions/Null.h>
-#import <TypeExtensions/Value.h>
-#import <TypeExtensions/KVC.h>
-#import <TypeExtensions/Misc.h>
-
-#import <TypeExtensions/NSNotificationCenter+errorCenter.h>
+#import "Collection.h"
+#import "Null.h"
+#import "Value.h"
+#import "KVC.h"
+#import "Misc.h"
+#import "Design.h"
+#import "Protocol.h"
+#import "String.h"

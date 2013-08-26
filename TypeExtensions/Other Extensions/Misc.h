@@ -3,9 +3,10 @@
 //  TypeExtensions
 //
 //  Created by Ethan Reesor on 2/5/13.
-//  Copyright (c) 2013 Lens Flare. All rights reserved.
+//  Copyright (c) 2013 Lens Flare. Some rights reserved, see license.
 //
 
-//#import <TypeExtensions/NSDictionary+entrySet.h>
-//#import <TypeExtensions/NSDictionaryEntrySetEntry.h>
-//#import <TypeExtensions/NSObject+invocationForSelector.h>
+#import "NSObject+associatedObject.h"
+#import "NSObject+invocationForSelector.h"
+#import "NSObject+DeallocListener.h"
+#import "NSObject+zeroingWeakReferenceProxy.h"

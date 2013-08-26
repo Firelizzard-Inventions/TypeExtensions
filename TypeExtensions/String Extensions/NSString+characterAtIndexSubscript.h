@@ -3,13 +3,13 @@
 //  TypeExtensions
 //
 //  Created by Ethan Reesor on 7/26/13.
-//  Copyright (c) 2013 Lens Flare. All rights reserved.
+//  Copyright (c) 2013 Lens Flare. Some rights reserved, see license.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface NSString (characterAtIndexSubscript)
 
-- (id)objectAtIndexedSubscript:(NSUInteger)idx;
+- (NSNumber *)objectAtIndexedSubscript:(NSUInteger)idx;
 
 @end
