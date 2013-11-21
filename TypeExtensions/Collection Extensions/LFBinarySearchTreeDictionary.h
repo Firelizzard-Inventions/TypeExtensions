@@ -10,4 +10,8 @@
 
 @interface LFBinarySearchTreeDictionary : NSDictionary
 
+@property (readonly) NSUInteger count;
+
+- (id)balancedCopy;
+
 @end

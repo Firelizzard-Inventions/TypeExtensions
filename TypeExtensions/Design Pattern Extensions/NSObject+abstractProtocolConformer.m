@@ -22,7 +22,7 @@
 	for (unsigned int i = 0; i < count; i++)
 		if (!isNullMethodDescription([[self class] methodDescriptionForSelector:aSelector inProtocol:protocols[i]]))
 			@throw [[self class] _subclassImplementationExceptionFromMethod:aSelector isClassMethod:NO];
-	__supersInvoke();
+	__supersInvoke(aSelector);
 }
 
 @end

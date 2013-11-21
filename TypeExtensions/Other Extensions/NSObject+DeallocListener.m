@@ -67,6 +67,17 @@ void proxyClass_setAssociatedObject_forKey(Class self, SEL _cmd, id obj, const c
 
 @implementation NSObject (DeallocListener)
 
+- (Class)realClass
+{
+	Class class = self.class;
+	Class original = objc_getAssociatedObject(class, kDeallocListenerOriginalClassKey);
+	
+	if (original)
+		return original;
+	else
+		return class;
+}
+
 - (id<DeallocNotifier>)startDeallocationNofitication
 {
 	Class original = objc_getAssociatedObject(self.class, kDeallocListenerOriginalClassKey);

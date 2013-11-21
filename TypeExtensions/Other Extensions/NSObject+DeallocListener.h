@@ -23,6 +23,8 @@
 
 @interface NSObject (DeallocListener)
 
+- (Class)realClass;
+
 - (id<DeallocNotifier>)startDeallocationNofitication;
 - (void)stopDeallocationNotification;
 
