@@ -10,6 +10,34 @@
 
 @implementation NSDictionaryEntrySetEntry
 
+- (BOOL)isEqual:(id)object
+{
+	if (!object)
+		return NO;
+	
+	if (object == self)
+		return YES;
+	
+	if (![object isKindOfClass:self.class])
+		return NO;
+	
+	NSDictionaryEntrySetEntry * other = (NSDictionaryEntrySetEntry *)object;
+	
+	if (self.key) {
+		if (![self.key isEqual:other.key])
+			return NO;
+	} else if (other.key)
+		return NO;
+	
+	if (self.object) {
+		if (![self.object isEqual:other.object])
+			return NO;
+	} else if (other.object)
+		return NO;
+	
+	return YES;
+}
+
 #pragma mark - Lifecycle Methods
 
 - (id)initWithKey:(NSObject *)key forDictionary:(NSDictionary *)dictionary

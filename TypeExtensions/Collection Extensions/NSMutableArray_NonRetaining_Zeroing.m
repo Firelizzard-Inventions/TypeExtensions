@@ -54,17 +54,6 @@
 	return ((NSValue *)object).nonretainedObjectValue;
 }
 
-- (id)unwrapAndStopNotification:(id)object
-{
-	object = [self unwrap:object];
-	
-	if (![object isKindOfClass:NSObject.class])
-		return nil;
-	
-	[(NSObject *)object stopDeallocationNotification];
-	return object;
-}
-
 - (void)objectDidDeallocate:(id)obj
 {
 	[_backing removeObject:[self wrap:obj]];
@@ -87,9 +76,7 @@
 
 - (void)removeObjectAtIndex:(NSUInteger)index
 {
-//	id object = [_backing objectAtIndex:index];
 	[_backing removeObjectAtIndex:index];
-//	[self unwrapAndStopNotification:object];
 }
 
 - (void)addObject:(id)anObject
@@ -104,9 +91,7 @@
 
 - (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject
 {
-	id object = [_backing objectAtIndex:index];
 	[_backing replaceObjectAtIndex:index withObject:[self wrapAndStartNotification:anObject]];
-	[self unwrapAndStopNotification:object];
 }
 
 @end

@@ -32,10 +32,6 @@ void proxy_removeDeallocListener(id self, SEL _cmd, id<DeallocListener> listener
 	[objc_getAssociatedObject(self, class_getName([self class])) removeObject:listener];
 }
 
-NSString * proxy_className(id self, SEL _cmd) {
-	return NSStringFromClass(objc_getAssociatedObject([self class], kDeallocListenerOriginalClassKey));
-}
-
 void proxy_dealloc(id self, SEL _cmd) {
 	if ([self respondsToSelector:@selector(invalidate)])
 		[self invalidate];
@@ -67,17 +63,6 @@ void proxyClass_setAssociatedObject_forKey(Class self, SEL _cmd, id obj, const c
 
 @implementation NSObject (DeallocListener)
 
-- (Class)realClass
-{
-	Class class = self.class;
-	Class original = objc_getAssociatedObject(class, kDeallocListenerOriginalClassKey);
-	
-	if (original)
-		return original;
-	else
-		return class;
-}
-
 - (id<DeallocNotifier>)startDeallocationNofitication
 {
 	Class original = objc_getAssociatedObject(self.class, kDeallocListenerOriginalClassKey);
@@ -96,7 +81,6 @@ void proxyClass_setAssociatedObject_forKey(Class self, SEL _cmd, id obj, const c
 		
 		class_addMethod(proxyClass, @selector(addDeallocListener:), (IMP)&proxy_addDeallocListener, "v@:@@");
 		class_addMethod(proxyClass, @selector(removeDeallocListener:), (IMP)&proxy_removeDeallocListener, "v@:@");
-		class_addMethod(proxyClass, @selector(className), (IMP)&proxy_className, "@@:");
 		class_addMethod(proxyClass, @selector(dealloc), (IMP)&proxy_dealloc, "v@:");
 		class_addMethod(proxyClass, @selector(associatedObjectForKey:), (IMP)&proxy_associatedObjectForKey, "@@:*");
 		class_addMethod(proxyClass, @selector(setAssociatedObject:forKey:), (IMP)&proxy_setAssociatedObject_forKey, "v@:@*");
@@ -104,7 +88,6 @@ void proxyClass_setAssociatedObject_forKey(Class self, SEL _cmd, id obj, const c
 		objc_registerClassPair(proxyClass);
 		
 		Class proxyClassClass = object_getClass(proxyClass);
-		class_addMethod(proxyClassClass, @selector(className), (IMP)&proxy_className, "@@:");
 		class_addMethod(proxyClassClass, @selector(associatedObjectForKey:), (IMP)&proxyClass_associatedObjectForKey, "@@:*");
 		class_addMethod(proxyClassClass, @selector(setAssociatedObject:forKey:), (IMP)&proxyClass_setAssociatedObject_forKey, "v@:@*");
 		

@@ -10,6 +10,6 @@
 
 @interface NSDictionary (entrySet)
 
-- (NSArray *)entrySet;
+- (NSSet *)entrySet;
 
 @end

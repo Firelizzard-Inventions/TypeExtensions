@@ -12,16 +12,15 @@
 
 @implementation NSDictionary (entrySet)
 
-- (NSArray *)entrySet
+- (NSSet *)entrySet
 {
-	NSMutableArray * entrySet = @[].mutableCopy;
+	NSMutableSet * entrySet = [NSMutableSet setWithCapacity:self.count];
 	
 	for (NSObject * key in self) {
 		[entrySet addObject:[NSDictionaryEntrySetEntry dictionaryEntryWithKey:key forDictionary:self]];
 	}
 	
-	NSArray * ret = [NSArray arrayWithArray:entrySet];
-	[entrySet release];
+	NSSet * ret = [NSSet setWithSet:entrySet];
 	
 	return ret;
 }

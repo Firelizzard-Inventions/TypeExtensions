@@ -11,6 +11,8 @@
 #import "NSObject+associatedObject.h"
 #import "NSObject+DeallocListener.h"
 
+#import <objc/runtime.h>
+
 
 @interface __NSObject_zeroingWeakReferenceProxy : NSProxy <DeallocListener, NSCopying>
 
@@ -39,7 +41,7 @@
 		return nil;
 	
 	_ref = object.startDeallocationNofitication;
-	_refClass = object.class;
+	_refClass = object_getClass(object);
 	
 	[self.ref addDeallocListener:self];
 	
