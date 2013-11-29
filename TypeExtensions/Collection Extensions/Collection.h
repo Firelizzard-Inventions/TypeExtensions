@@ -10,3 +10,4 @@
 #import "NSDictionaryEntrySetEntry.h"
 #import "NSMutableArray_NonRetaining_Zeroing.h"
 #import "NSMutableDictionary_NonRetaining_Zeroing.h"
+#import "NSDictionary_BinarySearchTree.h"

@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Lens Flare. All rights reserved.
 //
 
-#import "LFBinarySearchTreeDictionary.h"
+#import "NSDictionary_BinarySearchTree.h"
 
-@interface LFBinarySearchTreeDictionary ()
+@interface NSDictionary_BinarySearchTree ()
 
 @property (readonly) NSUInteger hash;
 @property (readonly) id key, object;
-@property (readonly) LFBinarySearchTreeDictionary * left, * right;
+@property (readonly) NSDictionary_BinarySearchTree * left, * right;
 
 + (NSUInteger)objectForHash:(id<NSObject>)object;
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation LFBinarySearchTreeDictionary
+@implementation NSDictionary_BinarySearchTree
 
 + (NSUInteger)objectForHash:(id<NSObject>)object
 {
@@ -48,12 +48,12 @@
 	id lobjects[count], robjects[count];
 	
 	_count = count;
-	_hash = [LFBinarySearchTreeDictionary objectForHash:(id<NSObject>)keys[mid]];
+	_hash = [NSDictionary_BinarySearchTree objectForHash:(id<NSObject>)keys[mid]];
 	_key = [keys[mid] copyWithZone:[self zone]];
 	_object = [objects[mid] retain];
 	
 	for (int i = 0; i < count; i++)
-		if ([LFBinarySearchTreeDictionary objectForHash:(id<NSObject>)keys[i]] < _hash) {
+		if ([NSDictionary_BinarySearchTree objectForHash:(id<NSObject>)keys[i]] < _hash) {
 			lkeys[lcount] = keys[i];
 			lobjects[lcount] = objects[i];
 			lcount++;
@@ -63,15 +63,15 @@
 			rcount++;
 		}
 	
-	_left = [[LFBinarySearchTreeDictionary alloc] initWithObjects:lobjects forKeys:lkeys count:lcount];
-	_right = [[LFBinarySearchTreeDictionary alloc] initWithObjects:robjects forKeys:rkeys count:rcount];
+	_left = [[NSDictionary_BinarySearchTree alloc] initWithObjects:lobjects forKeys:lkeys count:lcount];
+	_right = [[NSDictionary_BinarySearchTree alloc] initWithObjects:robjects forKeys:rkeys count:rcount];
 	
 	return self;
 }
 
 - (id)objectForKey:(id)aKey
 {
-	return [self objectForHash:[LFBinarySearchTreeDictionary objectForHash:aKey]];
+	return [self objectForHash:[NSDictionary_BinarySearchTree objectForHash:aKey]];
 }
 
 - (id)objectForHash:(NSUInteger)hash
@@ -98,7 +98,7 @@
 	
 	[self _buildSortedObjects:objects forKeys:keys count:self.count];
 	
-	return [[LFBinarySearchTreeDictionary alloc] initWithObjects:objects forKeys:keys count:self.count];
+	return [[NSDictionary_BinarySearchTree alloc] initWithObjects:objects forKeys:keys count:self.count];
 }
 
 - (NSUInteger)_buildSortedObjects:(id [])objects forKeys:(id [])keys count:(NSUInteger)count

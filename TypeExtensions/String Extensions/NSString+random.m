@@ -20,7 +20,7 @@
 		buf[i] = str[arc4random_uniform((u_int32_t)self.length)];
 	buf[count] = '\0';
 	
-	return [NSString stringWithCString:(const char *)buf encoding:NSUTF8StringEncoding];
+	return @((const char *)buf);
 }
 
 @end

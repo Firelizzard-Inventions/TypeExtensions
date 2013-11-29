@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LFBinarySearchTreeDictionary : NSDictionary
+@interface NSDictionary_BinarySearchTree : NSDictionary
 
 @property (readonly) NSUInteger count;
 
