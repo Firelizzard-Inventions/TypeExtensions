@@ -41,6 +41,7 @@
 		420D1AD3165BF54D0097EE03 /* NSString+numberValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */; };
 		420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420D1AD5165BF54D0097EE03 /* NSString+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */; };
+		426CA2F91849EE5200212CF3 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 426CA2F81849EE5200212CF3 /* Makefile */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5417C935A9007AAB83 /* Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5017C933F8007AAB83 /* Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5517C935AB007AAB83 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C4F17C933AC007AAB83 /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,6 +153,7 @@
 		420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+numberValue.m"; sourceTree = "<group>"; };
 		420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+plistValue.h"; sourceTree = "<group>"; };
 		420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+plistValue.m"; sourceTree = "<group>"; };
+		426CA2F81849EE5200212CF3 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		42719C4F17C933AC007AAB83 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		42719C5017C933F8007AAB83 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
 		42719C5117C9343C007AAB83 /* Design.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Design.h; sourceTree = "<group>"; };
@@ -259,9 +261,7 @@
 		420D1A90165BF5020097EE03 = {
 			isa = PBXGroup;
 			children = (
-				4290F08E1849A32600C67769 /* .travis.yml */,
-				4290F08A1849A31400C67769 /* LICENSE */,
-				4290F08B1849A31400C67769 /* README.md */,
+				426CA2F71849EE4300212CF3 /* Other */,
 				420D1AA5165BF5020097EE03 /* TypeExtensions */,
 				42877CC3183E8EA400967368 /* TypeExtensionsTests */,
 				420D1A9E165BF5020097EE03 /* Frameworks */,
@@ -366,6 +366,17 @@
 				4202873616CC245E00F2C92A /* NSDate+stringValue.m */,
 			);
 			path = "Value Extensions";
+			sourceTree = "<group>";
+		};
+		426CA2F71849EE4300212CF3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4290F08E1849A32600C67769 /* .travis.yml */,
+				4290F08A1849A31400C67769 /* LICENSE */,
+				4290F08B1849A31400C67769 /* README.md */,
+				426CA2F81849EE5200212CF3 /* Makefile */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 		42719C5B17C93855007AAB83 /* Collection Extensions */ = {
@@ -677,6 +688,7 @@
 				42719C6317C93855007AAB83 /* NSDictionaryEntrySetEntry.m in Sources */,
 				42719C7117C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m in Sources */,
 				42719C7A17C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m in Sources */,
+				426CA2F91849EE5200212CF3 /* Makefile in Sources */,
 				42AA1E37183AD5D000003384 /* NSDictionary_BinarySearchTree.m in Sources */,
 				427307F117C932F50045A398 /* NSObject+abstractClass.m in Sources */,
 				427307F317C932F50045A398 /* NSObject+abstractProtocolConformer.m in Sources */,

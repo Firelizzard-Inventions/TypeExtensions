@@ -1,3 +1,6 @@
 language: objective-c
+
 xcode_project: TypeExtensions.xcodeproj
 xcode_scheme: TypeExtensions
+
+install: make prebuild
