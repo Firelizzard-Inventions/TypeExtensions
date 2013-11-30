@@ -41,7 +41,6 @@
 		420D1AD3165BF54D0097EE03 /* NSString+numberValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */; };
 		420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420D1AD5165BF54D0097EE03 /* NSString+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */; };
-		426CA2F91849EE5200212CF3 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 426CA2F81849EE5200212CF3 /* Makefile */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5417C935A9007AAB83 /* Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5017C933F8007AAB83 /* Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5517C935AB007AAB83 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C4F17C933AC007AAB83 /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -688,7 +687,6 @@
 				42719C6317C93855007AAB83 /* NSDictionaryEntrySetEntry.m in Sources */,
 				42719C7117C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m in Sources */,
 				42719C7A17C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m in Sources */,
-				426CA2F91849EE5200212CF3 /* Makefile in Sources */,
 				42AA1E37183AD5D000003384 /* NSDictionary_BinarySearchTree.m in Sources */,
 				427307F117C932F50045A398 /* NSObject+abstractClass.m in Sources */,
 				427307F317C932F50045A398 /* NSObject+abstractProtocolConformer.m in Sources */,
