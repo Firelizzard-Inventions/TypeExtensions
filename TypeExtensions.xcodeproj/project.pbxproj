@@ -94,6 +94,8 @@
 		428D034B18482DA700303ED4 /* NSObject_KVCArrayForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034618482DA700303ED4 /* NSObject_KVCArrayForwarding.m */; };
 		428D034C18482DA700303ED4 /* NSObject_KVCUndefined.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D034718482DA700303ED4 /* NSObject_KVCUndefined.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428D034D18482DA700303ED4 /* NSObject_KVCUndefined.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034818482DA700303ED4 /* NSObject_KVCUndefined.m */; };
+		4290F08C1849A31400C67769 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4290F08A1849A31400C67769 /* LICENSE */; };
+		4290F08D1849A31400C67769 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4290F08B1849A31400C67769 /* README.md */; };
 		4291FF3816C57EA4000538EF /* NSString+orNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 4291FF3616C57EA4000538EF /* NSString+orNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4291FF3916C57EA4000538EF /* NSString+orNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291FF3716C57EA4000538EF /* NSString+orNull.m */; };
 		42AA1E36183AD5D000003384 /* NSDictionary_BinarySearchTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AA1E34183AD5D000003384 /* NSDictionary_BinarySearchTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -217,6 +219,9 @@
 		428D034618482DA700303ED4 /* NSObject_KVCArrayForwarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_KVCArrayForwarding.m; sourceTree = "<group>"; };
 		428D034718482DA700303ED4 /* NSObject_KVCUndefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_KVCUndefined.h; sourceTree = "<group>"; };
 		428D034818482DA700303ED4 /* NSObject_KVCUndefined.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_KVCUndefined.m; sourceTree = "<group>"; };
+		4290F08A1849A31400C67769 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4290F08B1849A31400C67769 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4290F08E1849A32600C67769 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		4291FF3616C57EA4000538EF /* NSString+orNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+orNull.h"; sourceTree = "<group>"; };
 		4291FF3716C57EA4000538EF /* NSString+orNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+orNull.m"; sourceTree = "<group>"; };
 		42AA1E34183AD5D000003384 /* NSDictionary_BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_BinarySearchTree.h; sourceTree = "<group>"; };
@@ -254,6 +259,9 @@
 		420D1A90165BF5020097EE03 = {
 			isa = PBXGroup;
 			children = (
+				4290F08E1849A32600C67769 /* .travis.yml */,
+				4290F08A1849A31400C67769 /* LICENSE */,
+				4290F08B1849A31400C67769 /* README.md */,
 				420D1AA5165BF5020097EE03 /* TypeExtensions */,
 				42877CC3183E8EA400967368 /* TypeExtensionsTests */,
 				420D1A9E165BF5020097EE03 /* Frameworks */,
@@ -634,6 +642,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4290F08D1849A31400C67769 /* README.md in Resources */,
+				4290F08C1849A31400C67769 /* LICENSE in Resources */,
 				420D1AAA165BF5020097EE03 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
