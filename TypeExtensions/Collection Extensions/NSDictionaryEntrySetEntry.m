@@ -10,6 +10,11 @@
 
 @implementation NSDictionaryEntrySetEntry
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ = %@", self.key, self.object];
+}
+
 - (BOOL)isEqual:(id)object
 {
 	if (!object)

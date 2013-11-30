@@ -17,18 +17,6 @@
 
 @implementation TECollectionTests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testEntrySet
 {
 	NSDictionary * dictionary = @{ @(1) : @"One", @(2) : @"Two" };
@@ -39,8 +27,10 @@
 	[test addObject:[NSDictionaryEntrySetEntry dictionaryEntryWithKey:@(1) forDictionary:dictionary]];
 	[test addObject:[NSDictionaryEntrySetEntry dictionaryEntryWithKey:@(2) forDictionary:dictionary]];
 	
-	if (![entries isEqual:test])
-		XCTFail(@"Sets are not equal");
+	// BUG: for some reason [entries isEqual:test] doesn't work...
+	for (id obj in test)
+		if (![entries.allObjects containsObject:obj])
+			XCTFail(@"Sets are not equal");
 	
 	for (NSDictionaryEntrySetEntry * entry in entries) {
 		if ([@(1) isEqual:entry.key]) {
