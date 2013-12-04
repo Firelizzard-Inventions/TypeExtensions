@@ -16,14 +16,14 @@
 
 @protocol DeallocNotifier <NSObject>
 
-- (void)addDeallocListener:(id<DeallocListener, NSCopying>)listener;
-- (void)removeDeallocListener:(id<DeallocListener, NSCopying>)listener;
+- (void)addDeallocListener:(id<DeallocListener>)listener;
+- (void)removeDeallocListener:(id<DeallocListener>)listener;
 
 @end
 
 @interface NSObject (DeallocListener)
 
-- (id<DeallocNotifier>)startDeallocationNofitication;
-- (void)stopDeallocationNotification;
+- (void)addDeallocListener:(id<DeallocListener>)listener;
+- (void)removeDeallocListener:(id<DeallocListener>)listener;
 
 @end

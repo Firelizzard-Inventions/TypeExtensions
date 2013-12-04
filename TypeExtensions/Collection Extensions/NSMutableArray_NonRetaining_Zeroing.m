@@ -37,7 +37,7 @@
 	if (![object isKindOfClass:NSObject.class])
 		return nil;
 	
-	[[(NSObject *)object startDeallocationNofitication] addDeallocListener:self];
+	[(NSObject *)object addDeallocListener:self];
 	return [self wrap:object];
 }
 

@@ -46,7 +46,7 @@
 		return nil;
 	
 	_dictionary = dict.retain;
-	_obj = [(NSObject *)obj startDeallocationNofitication];
+	_obj = obj;
 	_key = key.retain;
 	
 	[self.obj addDeallocListener:self];

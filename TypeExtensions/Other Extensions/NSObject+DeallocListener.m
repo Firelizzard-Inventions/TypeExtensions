@@ -14,95 +14,182 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-#define kDeallocListenerAssociatedClassKey		"__DeallocListener__AssociatedClass__"
-#define kDeallocListenerOriginalClassKey		"__DeallocListener__OriginalClass__"
-#define kDeallocListenerClassNameCharSetString	@"_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+#define kDeallocListenerAssociatedClassKey			"__DeallocListener__AssociatedClass__"
+#define kDeallocListenerOriginalClassKey			"__DeallocListener__OriginalClass__"
+#define kDeallocListenerArrayKey					"com.firelizzard.TypeExtensions.DeallocListener.listeners"
+#define kDeallocListenerSubclassFailureExceptionKey	@"com.firelizzard.TypeExtensions.DeallocListener.exceptions.subclassFailure"
 
-#define _super &((struct objc_super){self, [self superclass]})
+#define MAX_RETAIN_COUNT	0x7fffffffffffffff
 
-void proxy_addDeallocListener(id self, SEL _cmd, id<DeallocListener, NSCopying> listener) {
-	NSMutableArray * arr = objc_getAssociatedObject(self, class_getName([self class]));
-	if (!arr)
-		objc_setAssociatedObject(self, class_getName([self class]), arr = [NSMutableArray array], OBJC_ASSOCIATION_RETAIN);
+#pragma mark -
+
+@interface NSObject (DeallocListenerPrivate)
+
+- (void)_revert;
+
+@end
+
+#pragma mark -
+
+void DeallocNotifier_addDeallocListener(id self, SEL _cmd, id<DeallocListener> listener) {
+	NSMutableArray * arr = objc_getAssociatedObject(self, kDeallocListenerArrayKey);
+	
+	if (!arr) {
+		arr = [NSMutableArray array];
+		objc_setAssociatedObject(self, kDeallocListenerArrayKey, arr, OBJC_ASSOCIATION_RETAIN);
+	}
 	
 	[arr addObject:listener];
 }
 
-void proxy_removeDeallocListener(id self, SEL _cmd, id<DeallocListener> listener) {
-	[objc_getAssociatedObject(self, class_getName([self class])) removeObject:listener];
+void DeallocNotifier_removeDeallocListener(id self, SEL _cmd, id<DeallocListener> listener) {
+	NSMutableArray * arr = objc_getAssociatedObject(self, kDeallocListenerArrayKey);
+	
+	if (!arr)
+		return;
+	
+	[arr removeObject:listener];
 }
 
-void proxy_dealloc(id self, SEL _cmd) {
+void DeallocNotifier_dealloc(id self, SEL _cmd) {
 	if ([self respondsToSelector:@selector(invalidate)])
 		[self invalidate];
 	
-	for (id<DeallocListener> listener in objc_getAssociatedObject(self, class_getName([self class])))
+	for (id<DeallocListener> listener in objc_getAssociatedObject(self, kDeallocListenerArrayKey))
 		[listener objectDidDeallocate:self];
 	
-//	[(NSObject *)self stopDeallocationNotification];
+	objc_setAssociatedObject(self, kDeallocListenerArrayKey, nil, OBJC_ASSOCIATION_RETAIN);
 	
-	// [super dealloc]
-	objc_msgSendSuper(_super, _cmd);
+	[self _revert];
+	[self dealloc];
 }
 
-id proxy_associatedObjectForKey(id self, SEL _cmd, const char * key) {
-	return objc_msgSendSuper(_super, _cmd, key);
+Class DeallocNotifier_class(id self, SEL _cmd) {
+	Class realClass = object_getClass(self);
+	Class superClass = class_getSuperclass(realClass);
+	
+	object_setClass(self, superClass);
+	Class class = [self class];
+	object_setClass(self, realClass);
+	return class;
 }
 
-void proxy_setAssociatedObject_forKey(id self, SEL _cmd, id obj, const char * key) {
-	objc_msgSendSuper(_super, _cmd, obj, key);
+#pragma mark -
+
+id associatedObject_associatedObjectForKey(Class self, SEL _cmd, const char * key) {
+	return objc_getAssociatedObject(objc_getAssociatedObject(self, kDeallocListenerOriginalClassKey), key);
 }
 
-id proxyClass_associatedObjectForKey(Class self, SEL _cmd, const char * key) {
-	return objc_getAssociatedObject([self superclass], key);
+void associatedObject_setAssociatedObject_forKey(Class self, SEL _cmd, id obj, const char * key) {
+	objc_setAssociatedObject(objc_getAssociatedObject(self, kDeallocListenerOriginalClassKey), key, obj, OBJC_ASSOCIATION_RETAIN);
 }
 
-void proxyClass_setAssociatedObject_forKey(Class self, SEL _cmd, id obj, const char * key) {
-	objc_setAssociatedObject([self superclass], key, obj, OBJC_ASSOCIATION_RETAIN);
+#pragma mark -
+
+void KVOBug_addObserver_forKeyPath_options_context(id self, SEL _cmd, NSObject * observer, NSString * keyPath, NSKeyValueObservingOptions options, void * context) {
+	Class realClass = object_getClass(self);
+	Class superClass = class_getSuperclass(realClass);
+	
+	object_setClass(self, superClass);
+	[self addObserver:observer forKeyPath:keyPath options:options context:context];
+	object_setClass(self, realClass);
 }
+
+void KVOBug_removeObserver_forKeyPath_context(id self, SEL _cmd, NSObject * observer, NSString * keyPath, void * context) {
+	Class realClass = object_getClass(self);
+	Class superClass = class_getSuperclass(realClass);
+	
+	object_setClass(self, superClass);
+	[self removeObserver:observer forKeyPath:keyPath context:context];
+	object_setClass(self, realClass);
+}
+
+void KVOBug_setValue_forKey(id self, SEL _cmd, id object, NSString * key) {
+	Class realClass = object_getClass(self);
+	Class superClass = class_getSuperclass(realClass);
+	
+	object_setClass(self, superClass);
+	[self setValue:object forKey:key];
+	object_setClass(self, realClass);
+}
+
+#pragma mark -
 
 @implementation NSObject (DeallocListener)
 
-- (id<DeallocNotifier>)startDeallocationNofitication
-{
+- (void)addDeallocListener:(id<DeallocListener>)listener {
 	Class original = objc_getAssociatedObject(self.class, kDeallocListenerOriginalClassKey);
 	if (original || [self conformsToProtocol:@protocol(DeallocNotifier)])
-		return (id<DeallocNotifier>)self;
+		goto _addListener;
 	
-	original = self.class;
+	if ([self isMemberOfClass:NSObject.class])
+		goto _classException;
+	
+	if ([self isKindOfClass:NSString.class])
+		goto _classException;
+	
+	if ([self isKindOfClass:NSNumber.class])
+		goto _classException;
+	
+	if (self.retainCount == @(0).retainCount || self.retainCount == @"".retainCount)
+		goto _classException;
+	
+	[self addObserver:self forKeyPath:@"self" options:0 context:nil];
+	
+	original = object_getClass(self);
 	Class proxyClass = [(NSObject *)original associatedObjectForKey:kDeallocListenerAssociatedClassKey];
 	
 	if (!proxyClass) {
 		NSString * newName = [NSString stringWithFormat:@"DeallocNotifying_%@", original];
 		proxyClass = objc_allocateClassPair(original, [newName cStringUsingEncoding:NSASCIIStringEncoding], 0);
-		objc_setAssociatedObject(proxyClass, kDeallocListenerOriginalClassKey, original, OBJC_ASSOCIATION_RETAIN);
-		
-		class_addProtocol(proxyClass, @protocol(DeallocNotifier));
-		
-		class_addMethod(proxyClass, @selector(addDeallocListener:), (IMP)&proxy_addDeallocListener, "v@:@@");
-		class_addMethod(proxyClass, @selector(removeDeallocListener:), (IMP)&proxy_removeDeallocListener, "v@:@");
-		class_addMethod(proxyClass, @selector(dealloc), (IMP)&proxy_dealloc, "v@:");
-		class_addMethod(proxyClass, @selector(associatedObjectForKey:), (IMP)&proxy_associatedObjectForKey, "@@:*");
-		class_addMethod(proxyClass, @selector(setAssociatedObject:forKey:), (IMP)&proxy_setAssociatedObject_forKey, "v@:@*");
+		Class proxyClassClass = object_getClass(proxyClass);
 		
 		objc_registerClassPair(proxyClass);
 		
-		Class proxyClassClass = object_getClass(proxyClass);
-		class_addMethod(proxyClassClass, @selector(associatedObjectForKey:), (IMP)&proxyClass_associatedObjectForKey, "@@:*");
-		class_addMethod(proxyClassClass, @selector(setAssociatedObject:forKey:), (IMP)&proxyClass_setAssociatedObject_forKey, "v@:@*");
+		class_addProtocol(proxyClass, @protocol(DeallocNotifier));
 		
+		class_addMethod(proxyClass,      @selector(addDeallocListener:),                     (IMP)&DeallocNotifier_addDeallocListener,            "v@:@@");
+		class_addMethod(proxyClass,      @selector(removeDeallocListener:),                  (IMP)&DeallocNotifier_removeDeallocListener,         "v@:@");
+		class_addMethod(proxyClass,      @selector(dealloc),                                 (IMP)&DeallocNotifier_dealloc,                       "v@:");
+		class_addMethod(proxyClass,      @selector(class),                                   (IMP)&DeallocNotifier_class,                         "@@:");
+		
+		class_addMethod(proxyClassClass, @selector(associatedObjectForKey:),                 (IMP)&associatedObject_associatedObjectForKey,       "@@:*");
+		class_addMethod(proxyClassClass, @selector(setAssociatedObject:forKey:),             (IMP)&associatedObject_setAssociatedObject_forKey,   "v@:@*");
+		
+		class_addMethod(proxyClass,      @selector(addObserver:forKeyPath:options:context:), (IMP)&KVOBug_addObserver_forKeyPath_options_context, "v@:@@i*");
+		class_addMethod(proxyClass,      @selector(removeObserver:forKeyPath:context:),      (IMP)&KVOBug_removeObserver_forKeyPath_context,      "v@:@@*");
+		class_addMethod(proxyClass,      @selector(setValue:forKey:),                        (IMP)&KVOBug_setValue_forKey,                        "v@:@@");
+		
+		objc_setAssociatedObject(proxyClass, kDeallocListenerOriginalClassKey, original, OBJC_ASSOCIATION_RETAIN);
 		objc_setAssociatedObject(original, kDeallocListenerAssociatedClassKey, proxyClass, OBJC_ASSOCIATION_RETAIN);
 	}
 	
 	object_setClass(self, proxyClass);
-	return (id<DeallocNotifier>)self;
+	
+_addListener:
+	[self addDeallocListener:listener];
+	return;
+	
+_classException:
+	@throw [NSException exceptionWithName:kDeallocListenerSubclassFailureExceptionKey reason:[NSString stringWithFormat:@"%@ cannot be converted to a DeallocNotifier", self] userInfo:0];
 }
 
-- (void)stopDeallocationNotification
+- (void)removeDeallocListener:(id<DeallocListener>)listener
 {
-	Class original = objc_getAssociatedObject(self.class, kDeallocListenerOriginalClassKey);
-	if (original && original == self.superclass && [self conformsToProtocol:@protocol(DeallocNotifier)])
+	// nothing to do
+}
+
+@end
+
+@implementation NSObject (DeallocListenerPrivate)
+
+- (void)_revert
+{
+	Class original = objc_getAssociatedObject(object_getClass(self), kDeallocListenerOriginalClassKey);
+	if (original)
 		object_setClass(self, original);
+	
+	[self removeObserver:self forKeyPath:@"self" context:nil];
 }
 
 @end

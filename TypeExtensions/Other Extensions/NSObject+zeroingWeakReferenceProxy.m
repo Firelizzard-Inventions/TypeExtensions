@@ -19,7 +19,7 @@
 + (__NSObject_zeroingWeakReferenceProxy *)proxyWithReference:(NSObject *)object;
 - (id)initWithReference:(NSObject *)object;
 
-@property (readonly) NSObject<DeallocNotifier> * ref;
+@property (readonly) NSObject * ref;
 @property (readonly) Class refClass;
 
 @end
@@ -40,7 +40,7 @@
 	if (![object isKindOfClass:NSObject.class])
 		return nil;
 	
-	_ref = object.startDeallocationNofitication;
+	_ref = object;
 	_refClass = object_getClass(object);
 	
 	[self.ref addDeallocListener:self];

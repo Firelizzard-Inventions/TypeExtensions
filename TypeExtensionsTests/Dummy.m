@@ -10,4 +10,19 @@
 
 @implementation Dummy
 
++ (instancetype)dummy
+{
+	return [[[self alloc] init] autorelease];
+}
+
+- (id)init
+{
+	if (!(self = [super init]))
+		return nil;
+	
+	_something = nil;
+	
+	return self;
+}
+
 @end

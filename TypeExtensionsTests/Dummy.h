@@ -10,4 +10,8 @@
 
 @interface Dummy : NSObject
 
+@property (retain) NSString * something;
+
++ (instancetype)dummy;
+
 @end
