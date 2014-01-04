@@ -47,20 +47,15 @@
 		420D1AD5165BF54D0097EE03 /* NSString+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */; };
 		42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42352D3618765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */; };
+		42352D471877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D461877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5417C935A9007AAB83 /* Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5017C933F8007AAB83 /* Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5517C935AB007AAB83 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C4F17C933AC007AAB83 /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C6017C93855007AAB83 /* NSDictionary+entrySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5C17C93855007AAB83 /* NSDictionary+entrySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C6117C93855007AAB83 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */; };
-		42719C6217C93855007AAB83 /* NSDictionaryEntrySetEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5E17C93855007AAB83 /* NSDictionaryEntrySetEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C6317C93855007AAB83 /* NSDictionaryEntrySetEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C5F17C93855007AAB83 /* NSDictionaryEntrySetEntry.m */; };
 		42719C6517C9386A007AAB83 /* Collection.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6417C9386A007AAB83 /* Collection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C6C17C93B66007AAB83 /* NSString+random.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6A17C93B66007AAB83 /* NSString+random.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C6D17C93B66007AAB83 /* NSString+random.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C6B17C93B66007AAB83 /* NSString+random.m */; };
-		42719C7017C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6E17C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C7117C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C6F17C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m */; };
-		42719C7917C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C7717C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C7A17C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C7817C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m */; };
 		42719C7017C9450A007AAB83 /* TXMutableWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C7117C9450A007AAB83 /* TXMutableWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */; };
 		42719C7917C94F2A007AAB83 /* TXMutableWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,8 +103,6 @@
 		4290F08D1849A31400C67769 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4290F08B1849A31400C67769 /* README.md */; };
 		4291FF3816C57EA4000538EF /* NSString+orNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 4291FF3616C57EA4000538EF /* NSString+orNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4291FF3916C57EA4000538EF /* NSString+orNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291FF3716C57EA4000538EF /* NSString+orNull.m */; };
-		42AA1E36183AD5D000003384 /* NSDictionary_BinarySearchTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AA1E34183AD5D000003384 /* NSDictionary_BinarySearchTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42AA1E37183AD5D000003384 /* NSDictionary_BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AA1E35183AD5D000003384 /* NSDictionary_BinarySearchTree.m */; };
 		42AC0B19165CA0B2002E846E /* Null.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AC0B16165C9FBB002E846E /* Null.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AAC165BF5020097EE03 /* TypeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42BA0C3516707B2C0066DD1A /* NSString+urlValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BA0C3316707B2C0066DD1A /* NSString+urlValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,21 +161,15 @@
 		420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+plistValue.m"; sourceTree = "<group>"; };
 		42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+objectForKeyedSubscript.h"; sourceTree = "<group>"; };
 		42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMapTable+objectForKeyedSubscript.m"; sourceTree = "<group>"; };
-		426CA2F81849EE5200212CF3 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		42352D461877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArrayMutable_NonRetaining_Zeroing+Private.h"; sourceTree = "<group>"; };
 		42719C4F17C933AC007AAB83 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		42719C5017C933F8007AAB83 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
 		42719C5117C9343C007AAB83 /* Design.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Design.h; sourceTree = "<group>"; };
 		42719C5C17C93855007AAB83 /* NSDictionary+entrySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+entrySet.h"; sourceTree = "<group>"; };
 		42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+entrySet.m"; sourceTree = "<group>"; };
-		42719C5E17C93855007AAB83 /* NSDictionaryEntrySetEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryEntrySetEntry.h; sourceTree = "<group>"; };
-		42719C5F17C93855007AAB83 /* NSDictionaryEntrySetEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryEntrySetEntry.m; sourceTree = "<group>"; };
 		42719C6417C9386A007AAB83 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
 		42719C6A17C93B66007AAB83 /* NSString+random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+random.h"; sourceTree = "<group>"; };
 		42719C6B17C93B66007AAB83 /* NSString+random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+random.m"; sourceTree = "<group>"; };
-		42719C6E17C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArray_NonRetaining_Zeroing.h; sourceTree = "<group>"; };
-		42719C6F17C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_NonRetaining_Zeroing.m; sourceTree = "<group>"; };
-		42719C7717C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableDictionary_NonRetaining_Zeroing.h; sourceTree = "<group>"; };
-		42719C7817C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDictionary_NonRetaining_Zeroing.m; sourceTree = "<group>"; };
 		42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakArray.h; sourceTree = "<group>"; };
 		42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakArray.m; sourceTree = "<group>"; };
 		42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakDictionary.h; sourceTree = "<group>"; };
@@ -245,8 +232,6 @@
 		4290F08E1849A32600C67769 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		4291FF3616C57EA4000538EF /* NSString+orNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+orNull.h"; sourceTree = "<group>"; };
 		4291FF3716C57EA4000538EF /* NSString+orNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+orNull.m"; sourceTree = "<group>"; };
-		42AA1E34183AD5D000003384 /* NSDictionary_BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_BinarySearchTree.h; sourceTree = "<group>"; };
-		42AA1E35183AD5D000003384 /* NSDictionary_BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_BinarySearchTree.m; sourceTree = "<group>"; };
 		42AC0B16165C9FBB002E846E /* Null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Null.h; sourceTree = "<group>"; };
 		42BA0C3316707B2C0066DD1A /* NSString+urlValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+urlValue.h"; sourceTree = "<group>"; };
 		42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+urlValue.m"; sourceTree = "<group>"; };
@@ -393,7 +378,6 @@
 				4290F08E1849A32600C67769 /* .travis.yml */,
 				4290F08A1849A31400C67769 /* LICENSE */,
 				4290F08B1849A31400C67769 /* README.md */,
-				426CA2F81849EE5200212CF3 /* Makefile */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -401,17 +385,14 @@
 		42719C5B17C93855007AAB83 /* Collection Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				42352D461877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h */,
 				42719C6417C9386A007AAB83 /* Collection.h */,
 				42719C5C17C93855007AAB83 /* NSDictionary+entrySet.h */,
 				42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */,
-				42719C5E17C93855007AAB83 /* NSDictionaryEntrySetEntry.h */,
-				42719C5F17C93855007AAB83 /* NSDictionaryEntrySetEntry.m */,
-				42719C6E17C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.h */,
-				42719C6F17C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m */,
-				42719C7717C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.h */,
-				42719C7817C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m */,
-				42AA1E34183AD5D000003384 /* NSDictionary_BinarySearchTree.h */,
-				42AA1E35183AD5D000003384 /* NSDictionary_BinarySearchTree.m */,
+				42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */,
+				42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */,
+				42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */,
+				42719C7817C94F2A007AAB83 /* TXMutableWeakDictionary.m */,
 				42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */,
 				42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */,
 				42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */,
@@ -552,10 +533,8 @@
 				42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */,
 				42719C6517C9386A007AAB83 /* Collection.h in Headers */,
 				42719C6017C93855007AAB83 /* NSDictionary+entrySet.h in Headers */,
-				42719C6217C93855007AAB83 /* NSDictionaryEntrySetEntry.h in Headers */,
-				42719C7017C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.h in Headers */,
-				42719C7917C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.h in Headers */,
-				42AA1E36183AD5D000003384 /* NSDictionary_BinarySearchTree.h in Headers */,
+				42719C7017C9450A007AAB83 /* TXMutableWeakArray.h in Headers */,
+				42719C7917C94F2A007AAB83 /* TXMutableWeakDictionary.h in Headers */,
 				42719C7017C9450A007AAB83 /* TXMutableWeakArray.h in Headers */,
 				4205F9FA1851329100051E68 /* TXBTree.h in Headers */,
 				42719C7917C94F2A007AAB83 /* TXMutableWeakDictionary.h in Headers */,
@@ -576,6 +555,7 @@
 				428D034118482D9500303ED4 /* Notification.h in Headers */,
 				428D034218482D9500303ED4 /* NSNotificationCenter+errorCenter.h in Headers */,
 				42AC0B19165CA0B2002E846E /* Null.h in Headers */,
+				42352D471877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h in Headers */,
 				420D1AC8165BF54D0097EE03 /* NSObject+isNull.h in Headers */,
 				420D1ACA165BF54D0097EE03 /* NSString+isEmpty.h in Headers */,
 				420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */,
@@ -719,10 +699,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42719C6117C93855007AAB83 /* NSDictionary+entrySet.m in Sources */,
-				42719C6317C93855007AAB83 /* NSDictionaryEntrySetEntry.m in Sources */,
-				42719C7117C9450A007AAB83 /* NSMutableArray_NonRetaining_Zeroing.m in Sources */,
-				42719C7A17C94F2A007AAB83 /* NSMutableDictionary_NonRetaining_Zeroing.m in Sources */,
-				42AA1E37183AD5D000003384 /* NSDictionary_BinarySearchTree.m in Sources */,
+				42719C7117C9450A007AAB83 /* TXMutableWeakArray.m in Sources */,
+				42719C7A17C94F2A007AAB83 /* TXMutableWeakDictionary.m in Sources */,
 				42719C7117C9450A007AAB83 /* TXMutableWeakArray.m in Sources */,
 				42719C7A17C94F2A007AAB83 /* TXMutableWeakDictionary.m in Sources */,
 				427307F117C932F50045A398 /* NSObject+abstractClass.m in Sources */,
