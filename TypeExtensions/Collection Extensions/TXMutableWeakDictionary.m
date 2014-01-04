@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Lens Flare. All rights reserved.
 //
 
-#import "NSMutableDictionary_NonRetaining_Zeroing.h"
+#import "TXMutableWeakDictionary.h"
 
 #import "NSObject+DeallocListener.h"
 
 
-@interface NSMutableDictionary_NonRetaining_Zeroing ()
+@interface TXMutableWeakDictionary ()
 
 - (void)objectDidDeallocateForKey:(id)key;
 
@@ -20,24 +20,24 @@
 
 @interface __NSMutableDictionary_NonRetaining_Zeroing__Listener : NSObject <DeallocListener, NSCopying>
 
-@property (readonly) NSMutableDictionary_NonRetaining_Zeroing * dictionary;
+@property (readonly) TXMutableWeakDictionary * dictionary;
 @property (readonly) id<NSObject> key;
 @property (readonly) id<DeallocNotifier> obj;
 
-+ (__NSMutableDictionary_NonRetaining_Zeroing__Listener *)listenerWithDictionary:(NSMutableDictionary_NonRetaining_Zeroing *)dict forObject:(id)obj withKey:(id<NSObject>)key;
-- (id)initWithDictionary:(NSMutableDictionary_NonRetaining_Zeroing *)dict forObject:(id)obj withKey:(id<NSObject>)key;
++ (__NSMutableDictionary_NonRetaining_Zeroing__Listener *)listenerWithDictionary:(TXMutableWeakDictionary *)dict forObject:(id)obj withKey:(id<NSObject>)key;
+- (id)initWithDictionary:(TXMutableWeakDictionary *)dict forObject:(id)obj withKey:(id<NSObject>)key;
 
 @end
 
 
 @implementation __NSMutableDictionary_NonRetaining_Zeroing__Listener
 
-+ (__NSMutableDictionary_NonRetaining_Zeroing__Listener *)listenerWithDictionary:(NSMutableDictionary_NonRetaining_Zeroing *)dict forObject:(id)obj withKey:(id<NSObject>)key
++ (__NSMutableDictionary_NonRetaining_Zeroing__Listener *)listenerWithDictionary:(TXMutableWeakDictionary *)dict forObject:(id)obj withKey:(id<NSObject>)key
 {
 	return [[[self alloc] initWithDictionary:dict forObject:obj withKey:key] autorelease];
 }
 
-- (id)initWithDictionary:(NSMutableDictionary_NonRetaining_Zeroing *)dict forObject:(id)obj withKey:(id<NSObject>)key
+- (id)initWithDictionary:(TXMutableWeakDictionary *)dict forObject:(id)obj withKey:(id<NSObject>)key
 {
 	if (!(self = [super init]))
 		return nil;
@@ -79,7 +79,7 @@
 @end
 
 
-@implementation NSMutableDictionary_NonRetaining_Zeroing {
+@implementation TXMutableWeakDictionary {
 	NSMutableDictionary * _backing;
 }
 

@@ -10,6 +10,6 @@
 
 #import "NSObject+DeallocListener.h"
 
-@interface NSMutableArray_NonRetaining_Zeroing : NSMutableArray <DeallocListener>
+@interface TXMutableWeakArray : NSMutableArray <DeallocListener>
 
 @end

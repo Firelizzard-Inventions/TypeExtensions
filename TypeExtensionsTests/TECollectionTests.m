@@ -49,7 +49,7 @@
 {
 	NSObject * obj = [[Dummy alloc] init];
 	
-	NSMutableArray_NonRetaining_Zeroing * arr = [NSMutableArray_NonRetaining_Zeroing array];
+	TXMutableWeakArray * arr = [TXMutableWeakArray array];
 	
 	[arr addObject:obj];
 	
@@ -66,7 +66,7 @@
 {
 	NSObject * obj = [[Dummy alloc] init];
 	
-	NSMutableDictionary_NonRetaining_Zeroing * dict = [NSMutableDictionary_NonRetaining_Zeroing dictionary];
+	TXMutableWeakDictionary * dict = [TXMutableWeakDictionary dictionary];
 	
 	dict[@(1)] = obj;
 	

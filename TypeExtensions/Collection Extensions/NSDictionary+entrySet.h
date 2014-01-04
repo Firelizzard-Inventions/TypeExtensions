@@ -13,3 +13,10 @@
 - (NSSet *)entrySet;
 
 @end
+
+@protocol NSDictionaryEntry <NSObject>
+
+- (id<NSObject>)key;
+- (id<NSObject>)object;
+
+@end
