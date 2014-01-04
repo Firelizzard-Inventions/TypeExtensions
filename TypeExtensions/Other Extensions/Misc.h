@@ -8,5 +8,4 @@
 
 #import "NSObject+associatedObject.h"
 #import "NSObject+invocationForSelector.h"
-#import "NSObject+zeroingWeakReferenceProxy.h"
 #import "NSObject+invokeSafely.h"

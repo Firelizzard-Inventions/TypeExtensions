@@ -76,8 +76,6 @@
 		42877CB1183DAC4100967368 /* NSObject+associatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA6183DAC4100967368 /* NSObject+associatedObject.m */; };
 		42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CB5183DAC4100967368 /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */; };
-		42877CB6183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CAB183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42877CB7183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAC183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.m */; };
 		42877CBA183DB08900967368 /* NSObject+invokeSafely.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CB8183DB08900967368 /* NSObject+invokeSafely.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CBB183DB08900967368 /* NSObject+invokeSafely.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CB9183DB08900967368 /* NSObject+invokeSafely.m */; };
 		428D034118482D9500303ED4 /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D033E18482D9500303ED4 /* Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -179,8 +177,6 @@
 		42877CA6183DAC4100967368 /* NSObject+associatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+associatedObject.m"; sourceTree = "<group>"; };
 		42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invocationForSelector.h"; sourceTree = "<group>"; };
 		42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+invocationForSelector.m"; sourceTree = "<group>"; };
-		42877CAB183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+zeroingWeakReferenceProxy.h"; sourceTree = "<group>"; };
-		42877CAC183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zeroingWeakReferenceProxy.m"; sourceTree = "<group>"; };
 		42877CB8183DB08900967368 /* NSObject+invokeSafely.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invokeSafely.h"; sourceTree = "<group>"; };
 		42877CB9183DB08900967368 /* NSObject+invokeSafely.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+invokeSafely.m"; sourceTree = "<group>"; };
 		42877CC1183E8EA400967368 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -456,8 +452,6 @@
 				42877CA6183DAC4100967368 /* NSObject+associatedObject.m */,
 				42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */,
 				42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */,
-				42877CAB183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.h */,
-				42877CAC183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.m */,
 				42877CB8183DB08900967368 /* NSObject+invokeSafely.h */,
 				42877CB9183DB08900967368 /* NSObject+invokeSafely.m */,
 			);
@@ -533,7 +527,6 @@
 				42877CAF183DAC4100967368 /* Misc.h in Headers */,
 				42877CB0183DAC4100967368 /* NSObject+associatedObject.h in Headers */,
 				42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */,
-				42877CB6183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.h in Headers */,
 				42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */,
 				42877CBA183DB08900967368 /* NSObject+invokeSafely.h in Headers */,
 			);
@@ -684,7 +677,6 @@
 				4202873816CC245E00F2C92A /* NSDate+stringValue.m in Sources */,
 				42877CB1183DAC4100967368 /* NSObject+associatedObject.m in Sources */,
 				42877CB5183DAC4100967368 /* NSObject+invocationForSelector.m in Sources */,
-				42877CB7183DAC4100967368 /* NSObject+zeroingWeakReferenceProxy.m in Sources */,
 				42877CBB183DB08900967368 /* NSObject+invokeSafely.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
