@@ -8,7 +8,13 @@
 
 #import "NSDictionary+entrySet.h"
 
-#import "NSDictionaryEntrySetEntry.h"
+@interface __NSDictionaryEntry : NSObject <NSDictionaryEntry>
+
+@property (readonly) id<NSObject> key, object;
+
++ (instancetype)dictionaryEntryWithKey:(id<NSObject>)key forDictionary:(NSDictionary *)dictionary;
+
+@end
 
 @implementation NSDictionary (entrySet)
 
@@ -16,13 +22,71 @@
 {
 	NSMutableSet * entrySet = [NSMutableSet setWithCapacity:self.count];
 	
-	for (NSObject * key in self) {
-		[entrySet addObject:[NSDictionaryEntrySetEntry dictionaryEntryWithKey:key forDictionary:self]];
+	for (id<NSObject> key in self) {
+		[entrySet addObject:[__NSDictionaryEntry dictionaryEntryWithKey:key forDictionary:self]];
 	}
 	
 	NSSet * ret = [NSSet setWithSet:entrySet];
 	
 	return ret;
+}
+
+@end
+
+@implementation __NSDictionaryEntry
+
++ (instancetype)dictionaryEntryWithKey:(id<NSObject>)key forDictionary:(NSDictionary *)dictionary
+{
+	return [[[self alloc] initWithKey:key forDictionary:dictionary] autorelease];
+}
+
+- (id)initWithKey:(id<NSObject>)key forDictionary:(NSDictionary *)dictionary
+{
+	if (self = [super init]) {
+		_key = [key retain];
+		_object = [dictionary[key] retain];
+	}
+	return self;
+}
+
+- (void)dealloc
+{
+	[_key release];
+	[_object release];
+	[super dealloc];
+}
+
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"%@ = %@", self.key, self.object];
+}
+
+- (BOOL)isEqual:(id)object
+{
+	if (!object)
+		return NO;
+	
+	if (object == self)
+		return YES;
+	
+	if (![object isKindOfClass:self.class])
+		return NO;
+	
+	__NSDictionaryEntry * other = (__NSDictionaryEntry *)object;
+	
+	if (self.key) {
+		if (![self.key isEqual:other.key])
+			return NO;
+	} else if (other.key)
+		return NO;
+	
+	if (self.object) {
+		if (![self.object isEqual:other.object])
+			return NO;
+	} else if (other.object)
+		return NO;
+	
+	return YES;
 }
 
 @end

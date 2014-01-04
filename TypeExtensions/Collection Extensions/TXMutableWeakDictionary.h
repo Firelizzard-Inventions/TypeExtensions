@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableDictionary_NonRetaining_Zeroing : NSMutableDictionary
+@interface TXMutableWeakDictionary : NSMutableDictionary
 
 @end

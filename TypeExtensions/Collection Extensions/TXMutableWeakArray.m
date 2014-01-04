@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Lens Flare. All rights reserved.
 //
 
-#import "NSMutableArray_NonRetaining_Zeroing.h"
+#import "TXMutableWeakArray.h"
 
-@implementation NSMutableArray_NonRetaining_Zeroing {
+@implementation TXMutableWeakArray {
 	NSMutableArray * _backing;
 }
 
