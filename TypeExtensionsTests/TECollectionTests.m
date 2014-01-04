@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 #import <TypeExtensions/Collection.h>
+#import <TypeExtensions/NSMutableArray_NonRetaining_Zeroing.h>
+#import <TypeExtensions/NSMutableDictionary_NonRetaining_Zeroing.h>
 
 #import "Dummy.h"
 

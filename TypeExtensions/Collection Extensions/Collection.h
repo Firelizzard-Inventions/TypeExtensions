@@ -8,6 +8,7 @@
 
 #import "NSDictionary+entrySet.h"
 #import "NSDictionaryEntrySetEntry.h"
+#import "NSMapTable+objectForKeyedSubscript.h"
 #import "NSMutableArray_NonRetaining_Zeroing.h"
 #import "NSMutableDictionary_NonRetaining_Zeroing.h"
 #import "NSDictionary_BinarySearchTree.h"
