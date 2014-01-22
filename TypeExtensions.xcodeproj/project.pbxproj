@@ -32,10 +32,6 @@
 		420D1AD2165BF54D0097EE03 /* NSString+numberValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC2165BF54D0097EE03 /* NSString+numberValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42352D661877E46C0011CA48 /* TXMutableWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D621877E46C0011CA48 /* TXMutableWeakArray.h */; };
-		42352D671877E46C0011CA48 /* TXMutableWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D631877E46C0011CA48 /* TXMutableWeakArray.m */; };
-		42352D681877E46C0011CA48 /* TXMutableWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */; };
-		42352D691877E46C0011CA48 /* TXMutableWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */; };
 		42352D6A1877E4AF0011CA48 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */; };
 		42352D6B1877E4AF0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */; };
 		42352D6E1877E4AF0011CA48 /* NSObject+abstractClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DB17C932F50045A398 /* NSObject+abstractClass.m */; };
@@ -66,7 +62,6 @@
 		42352D871877E4AF0011CA48 /* NSString+dateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873216CC241600F2C92A /* NSString+dateValue.m */; };
 		42352D881877E4AF0011CA48 /* NSDate+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873616CC245E00F2C92A /* NSDate+stringValue.m */; };
 		42352D891877E4AF0011CA48 /* NSObject+associatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA6183DAC4100967368 /* NSObject+associatedObject.m */; };
-		42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */; };
 		42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */; };
 		42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CB9183DB08900967368 /* NSObject+invokeSafely.m */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -87,7 +82,6 @@
 		4273080217C932F50045A398 /* NSString+isEqualToStringIgnoreCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307EE17C932F50045A398 /* NSString+isEqualToStringIgnoreCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CAF183DAC4100967368 /* Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA4183DAC4100967368 /* Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CB0183DAC4100967368 /* NSObject+associatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA5183DAC4100967368 /* NSObject+associatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42877CB2183DAC4100967368 /* NSObject+DeallocListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CBA183DB08900967368 /* NSObject+invokeSafely.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CB8183DB08900967368 /* NSObject+invokeSafely.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428D034118482D9500303ED4 /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D033E18482D9500303ED4 /* Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,10 +146,6 @@
 		420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+plistValue.m"; sourceTree = "<group>"; };
 		42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+objectForKeyedSubscript.h"; sourceTree = "<group>"; };
 		42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMapTable+objectForKeyedSubscript.m"; sourceTree = "<group>"; };
-		42352D621877E46C0011CA48 /* TXMutableWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakArray.h; sourceTree = "<group>"; };
-		42352D631877E46C0011CA48 /* TXMutableWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakArray.m; sourceTree = "<group>"; };
-		42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakDictionary.h; sourceTree = "<group>"; };
-		42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakDictionary.m; sourceTree = "<group>"; };
 		42719C4F17C933AC007AAB83 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		42719C5017C933F8007AAB83 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
 		42719C5117C9343C007AAB83 /* Design.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Design.h; sourceTree = "<group>"; };
@@ -187,8 +177,6 @@
 		42877CA4183DAC4100967368 /* Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Misc.h; sourceTree = "<group>"; };
 		42877CA5183DAC4100967368 /* NSObject+associatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+associatedObject.h"; sourceTree = "<group>"; };
 		42877CA6183DAC4100967368 /* NSObject+associatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+associatedObject.m"; sourceTree = "<group>"; };
-		42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocListener.h"; sourceTree = "<group>"; };
-		42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocListener.m"; sourceTree = "<group>"; };
 		42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invocationForSelector.h"; sourceTree = "<group>"; };
 		42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+invocationForSelector.m"; sourceTree = "<group>"; };
 		42877CB8183DB08900967368 /* NSObject+invokeSafely.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invokeSafely.h"; sourceTree = "<group>"; };
@@ -380,10 +368,6 @@
 				42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */,
 				42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */,
 				42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */,
-				42352D621877E46C0011CA48 /* TXMutableWeakArray.h */,
-				42352D631877E46C0011CA48 /* TXMutableWeakArray.m */,
-				42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */,
-				42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */,
 			);
 			path = "Collection Extensions";
 			sourceTree = "<group>";
@@ -470,8 +454,6 @@
 				42877CA4183DAC4100967368 /* Misc.h */,
 				42877CA5183DAC4100967368 /* NSObject+associatedObject.h */,
 				42877CA6183DAC4100967368 /* NSObject+associatedObject.m */,
-				42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */,
-				42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */,
 				42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */,
 				42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */,
 				42877CB8183DB08900967368 /* NSObject+invokeSafely.h */,
@@ -530,9 +512,7 @@
 				42719C6C17C93B66007AAB83 /* NSString+random.h in Headers */,
 				428D034118482D9500303ED4 /* Notification.h in Headers */,
 				428D034218482D9500303ED4 /* NSNotificationCenter+errorCenter.h in Headers */,
-				42352D681877E46C0011CA48 /* TXMutableWeakDictionary.h in Headers */,
 				42AC0B19165CA0B2002E846E /* Null.h in Headers */,
-				42352D661877E46C0011CA48 /* TXMutableWeakArray.h in Headers */,
 				420D1AC8165BF54D0097EE03 /* NSObject+isNull.h in Headers */,
 				420D1ACA165BF54D0097EE03 /* NSString+isEmpty.h in Headers */,
 				420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */,
@@ -552,7 +532,6 @@
 				4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */,
 				42877CAF183DAC4100967368 /* Misc.h in Headers */,
 				42877CB0183DAC4100967368 /* NSObject+associatedObject.h in Headers */,
-				42877CB2183DAC4100967368 /* NSObject+DeallocListener.h in Headers */,
 				42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */,
 				42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */,
 				429CE069188F682C00FF0113 /* TXZeroingWeakProxy.h in Headers */,
@@ -693,8 +672,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42352D671877E46C0011CA48 /* TXMutableWeakArray.m in Sources */,
-				42352D691877E46C0011CA48 /* TXMutableWeakDictionary.m in Sources */,
 				42352D6A1877E4AF0011CA48 /* NSDictionary+entrySet.m in Sources */,
 				42352D6B1877E4AF0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */,
 				42352D6E1877E4AF0011CA48 /* NSObject+abstractClass.m in Sources */,
@@ -726,7 +703,6 @@
 				42352D871877E4AF0011CA48 /* NSString+dateValue.m in Sources */,
 				42352D881877E4AF0011CA48 /* NSDate+stringValue.m in Sources */,
 				42352D891877E4AF0011CA48 /* NSObject+associatedObject.m in Sources */,
-				42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */,
 				42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */,
 				42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */,
 			);

@@ -8,7 +8,5 @@
 
 #import "NSObject+associatedObject.h"
 #import "NSObject+invocationForSelector.h"
-#import "NSObject+DeallocListener.h"
-#import "TXZeroingWeakProxy.h"
 #import "NSObject+invokeSafely.h"
 #import "NSObject_Singleton.h"

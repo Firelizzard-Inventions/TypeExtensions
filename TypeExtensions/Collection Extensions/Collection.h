@@ -8,5 +8,3 @@
 
 #import "NSDictionary+entrySet.h"
 #import "NSMapTable+objectForKeyedSubscript.h"
-#import "TXMutableWeakArray.h"
-#import "TXMutableWeakDictionary.h"
