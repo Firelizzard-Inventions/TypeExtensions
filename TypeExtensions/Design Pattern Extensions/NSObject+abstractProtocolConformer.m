@@ -15,14 +15,26 @@
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 @implementation NSObject (abstractProtocolConformer)
 
+
 - (void)doesNotRecognizeSelector:(SEL)aSelector
 {
-	unsigned int count = 0;
-	Protocol ** protocols = class_copyProtocolList([self class], &count);
-	for (unsigned int i = 0; i < count; i++)
-		if (!isNullMethodDescription([[self class] methodDescriptionForSelector:aSelector inProtocol:protocols[i]]))
-			@throw [[self class] _subclassImplementationExceptionFromMethod:aSelector isClassMethod:NO];
+	Class class = self.class;
+	
+	do {
+		unsigned int count = 0, i;
+		Protocol * __unsafe_unretained * list = class_copyProtocolList(class, &count);
+		
+		for (i = 0; i < count; i++)
+			if (!isNullMethodDescription([class methodDescriptionForSelector:aSelector inProtocol:list[i]]))
+				goto throw;
+		
+		free(list);
+	} while ((class = class.superclass));
+	
 	__supersInvoke(aSelector);
+	
+throw:
+	@throw [[self class] _subclassImplementationExceptionFromMethod:aSelector isClassMethod:NO];
 }
 
 @end

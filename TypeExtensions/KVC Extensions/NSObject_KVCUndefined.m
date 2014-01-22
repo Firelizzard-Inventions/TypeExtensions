@@ -29,10 +29,6 @@
 	[_internal_set unlock];
 	[_internal_get unlock];
 	
-	[undefined release];
-	[_internal_set release];
-	[_internal_get release];
-	[super dealloc];
 }
 
 - (NSArray *)redefinedKeys
