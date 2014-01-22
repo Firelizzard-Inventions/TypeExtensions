@@ -21,8 +21,6 @@
 		42026AEC183EA16500B1F530 /* TypeExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420D1A9C165BF5020097EE03 /* TypeExtensions.framework */; };
 		4202873316CC241600F2C92A /* NSString+dateValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873116CC241600F2C92A /* NSString+dateValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873516CC245E00F2C92A /* NSDate+stringValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4205F9FA1851329100051E68 /* TXBTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 4205F9F81851329100051E68 /* TXBTree.h */; };
-		420952B0185054CF006E904A /* TXBijectiveDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 420952AE185054CF006E904A /* TXBijectiveDictionary.h */; };
 		420D1AA0165BF5020097EE03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420D1A9F165BF5020097EE03 /* Cocoa.framework */; };
 		420D1AAA165BF5020097EE03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 420D1AA8165BF5020097EE03 /* InfoPlist.strings */; };
 		420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AB5165BF54D0097EE03 /* NSArray+orNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,8 +39,6 @@
 		42352D691877E46C0011CA48 /* TXMutableWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */; };
 		42352D6A1877E4AF0011CA48 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */; };
 		42352D6B1877E4AF0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */; };
-		42352D6C1877E4AF0011CA48 /* TXBijectiveDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 420952AF185054CF006E904A /* TXBijectiveDictionary.m */; };
-		42352D6D1877E4AF0011CA48 /* TXBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4205F9F91851329100051E68 /* TXBTree.m */; };
 		42352D6E1877E4AF0011CA48 /* NSObject+abstractClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DB17C932F50045A398 /* NSObject+abstractClass.m */; };
 		42352D6F1877E4AF0011CA48 /* NSObject+abstractProtocolConformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DD17C932F50045A398 /* NSObject+abstractProtocolConformer.m */; };
 		42352D701877E4AF0011CA48 /* NSObject+supersequentImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DF17C932F50045A398 /* NSObject+supersequentImplementation.m */; };
@@ -129,10 +125,6 @@
 		4202873216CC241600F2C92A /* NSString+dateValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+dateValue.m"; sourceTree = "<group>"; };
 		4202873516CC245E00F2C92A /* NSDate+stringValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+stringValue.h"; sourceTree = "<group>"; };
 		4202873616CC245E00F2C92A /* NSDate+stringValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+stringValue.m"; sourceTree = "<group>"; };
-		4205F9F81851329100051E68 /* TXBTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBTree.h; sourceTree = "<group>"; };
-		4205F9F91851329100051E68 /* TXBTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBTree.m; sourceTree = "<group>"; };
-		420952AE185054CF006E904A /* TXBijectiveDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBijectiveDictionary.h; sourceTree = "<group>"; };
-		420952AF185054CF006E904A /* TXBijectiveDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBijectiveDictionary.m; sourceTree = "<group>"; };
 		420D1A9C165BF5020097EE03 /* TypeExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TypeExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		420D1A9F165BF5020097EE03 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		420D1AA2165BF5020097EE03 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -392,10 +384,6 @@
 				42352D631877E46C0011CA48 /* TXMutableWeakArray.m */,
 				42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */,
 				42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */,
-				420952AE185054CF006E904A /* TXBijectiveDictionary.h */,
-				420952AF185054CF006E904A /* TXBijectiveDictionary.m */,
-				4205F9F81851329100051E68 /* TXBTree.h */,
-				4205F9F91851329100051E68 /* TXBTree.m */,
 			);
 			path = "Collection Extensions";
 			sourceTree = "<group>";
@@ -527,7 +515,6 @@
 				42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */,
 				42719C6517C9386A007AAB83 /* Collection.h in Headers */,
 				42719C6017C93855007AAB83 /* NSDictionary+entrySet.h in Headers */,
-				4205F9FA1851329100051E68 /* TXBTree.h in Headers */,
 				42719C5317C935A6007AAB83 /* Design.h in Headers */,
 				427307F017C932F50045A398 /* NSObject+abstractClass.h in Headers */,
 				427307F217C932F50045A398 /* NSObject+abstractProtocolConformer.h in Headers */,
@@ -561,7 +548,6 @@
 				420D1ACE165BF54D0097EE03 /* NSString+dataValue.h in Headers */,
 				42DFF307165DFBE6003F26DA /* NSData+stringValue.h in Headers */,
 				420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */,
-				420952B0185054CF006E904A /* TXBijectiveDictionary.h in Headers */,
 				420D1ACC165BF54D0097EE03 /* NSDictionary+plistValue.h in Headers */,
 				4202873316CC241600F2C92A /* NSString+dateValue.h in Headers */,
 				4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */,
@@ -711,8 +697,6 @@
 				42352D691877E46C0011CA48 /* TXMutableWeakDictionary.m in Sources */,
 				42352D6A1877E4AF0011CA48 /* NSDictionary+entrySet.m in Sources */,
 				42352D6B1877E4AF0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */,
-				42352D6C1877E4AF0011CA48 /* TXBijectiveDictionary.m in Sources */,
-				42352D6D1877E4AF0011CA48 /* TXBTree.m in Sources */,
 				42352D6E1877E4AF0011CA48 /* NSObject+abstractClass.m in Sources */,
 				42352D6F1877E4AF0011CA48 /* NSObject+abstractProtocolConformer.m in Sources */,
 				42352D701877E4AF0011CA48 /* NSObject+supersequentImplementation.m in Sources */,
