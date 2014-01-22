@@ -37,24 +37,18 @@
 
 + (instancetype)dictionaryEntryWithKey:(id<NSObject>)key forDictionary:(NSDictionary *)dictionary
 {
-	return [[[self alloc] initWithKey:key forDictionary:dictionary] autorelease];
+	return [[self alloc] initWithKey:key forDictionary:dictionary];
 }
 
 - (id)initWithKey:(id<NSObject>)key forDictionary:(NSDictionary *)dictionary
 {
 	if (self = [super init]) {
-		_key = [key retain];
-		_object = [dictionary[key] retain];
+		_key = key;
+		_object = dictionary[key];
 	}
 	return self;
 }
 
-- (void)dealloc
-{
-	[_key release];
-	[_object release];
-	[super dealloc];
-}
 
 - (NSString *)description
 {
