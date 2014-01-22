@@ -25,8 +25,8 @@
 - (id)initWithTarget:(id)theTarget keyPath:(NSString *)theKeyPath isMutable:(BOOL)isMutable
 {
 	if (self = [super init]) {
-		target = [theTarget retain];
-		keyPath = [theKeyPath retain];
+		target = theTarget;
+		keyPath = theKeyPath;
 		NSString * KeyPath = keyPath.capitalizedString;
 		
 		Class class = [self class];
@@ -41,10 +41,10 @@
 		if (subclass == nil)
 			return nil;
 		
-		class_addMethod(subclass,
-						@selector(dealloc),
-						[class instanceMethodForSelector:@selector(dealloc)],
-						"v@:");
+//		class_addMethod(subclass,
+//						@selector(dealloc),
+//						[class instanceMethodForSelector:@selector(dealloc)],
+//						"v@:");
 		
 		class_addMethod(subclass,
 						NSSelectorFromString([NSString stringWithFormat:@"countOf%@", KeyPath]),
@@ -105,13 +105,6 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	[target release];
-	[keyPath release];
-	
-	[super dealloc];
-}
 
 - (NSArray *)arrayProperty
 {
@@ -144,7 +137,7 @@
 	return [self.arrayProperty objectsAtIndexes:indexes];
 }
 
-- (void)getArrayObjects:(id *)buffer range:(NSRange)inRange
+- (void)getArrayObjects:(__unsafe_unretained id *)buffer range:(NSRange)inRange
 {
 	[self.arrayProperty getObjects:buffer range:inRange];
 }
