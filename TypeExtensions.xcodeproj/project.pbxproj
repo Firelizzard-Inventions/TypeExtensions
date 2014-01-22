@@ -62,6 +62,7 @@
 		42352D871877E4AF0011CA48 /* NSString+dateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873216CC241600F2C92A /* NSString+dateValue.m */; };
 		42352D881877E4AF0011CA48 /* NSDate+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873616CC245E00F2C92A /* NSDate+stringValue.m */; };
 		42352D891877E4AF0011CA48 /* NSObject+associatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA6183DAC4100967368 /* NSObject+associatedObject.m */; };
+		42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */; };
 		42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */; };
 		42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CB9183DB08900967368 /* NSObject+invokeSafely.m */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +83,7 @@
 		4273080217C932F50045A398 /* NSString+isEqualToStringIgnoreCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307EE17C932F50045A398 /* NSString+isEqualToStringIgnoreCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CAF183DAC4100967368 /* Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA4183DAC4100967368 /* Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CB0183DAC4100967368 /* NSObject+associatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA5183DAC4100967368 /* NSObject+associatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42877CB2183DAC4100967368 /* NSObject+DeallocListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CBA183DB08900967368 /* NSObject+invokeSafely.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CB8183DB08900967368 /* NSObject+invokeSafely.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428D034118482D9500303ED4 /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D033E18482D9500303ED4 /* Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -175,6 +177,8 @@
 		42877CA4183DAC4100967368 /* Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Misc.h; sourceTree = "<group>"; };
 		42877CA5183DAC4100967368 /* NSObject+associatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+associatedObject.h"; sourceTree = "<group>"; };
 		42877CA6183DAC4100967368 /* NSObject+associatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+associatedObject.m"; sourceTree = "<group>"; };
+		42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocListener.h"; sourceTree = "<group>"; };
+		42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocListener.m"; sourceTree = "<group>"; };
 		42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invocationForSelector.h"; sourceTree = "<group>"; };
 		42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+invocationForSelector.m"; sourceTree = "<group>"; };
 		42877CB8183DB08900967368 /* NSObject+invokeSafely.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+invokeSafely.h"; sourceTree = "<group>"; };
@@ -450,6 +454,8 @@
 				42877CA4183DAC4100967368 /* Misc.h */,
 				42877CA5183DAC4100967368 /* NSObject+associatedObject.h */,
 				42877CA6183DAC4100967368 /* NSObject+associatedObject.m */,
+				42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */,
+				42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */,
 				42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */,
 				42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */,
 				42877CB8183DB08900967368 /* NSObject+invokeSafely.h */,
@@ -526,6 +532,7 @@
 				4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */,
 				42877CAF183DAC4100967368 /* Misc.h in Headers */,
 				42877CB0183DAC4100967368 /* NSObject+associatedObject.h in Headers */,
+				42877CB2183DAC4100967368 /* NSObject+DeallocListener.h in Headers */,
 				42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */,
 				42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */,
 				42877CBA183DB08900967368 /* NSObject+invokeSafely.h in Headers */,
@@ -695,6 +702,7 @@
 				42352D871877E4AF0011CA48 /* NSString+dateValue.m in Sources */,
 				42352D881877E4AF0011CA48 /* NSDate+stringValue.m in Sources */,
 				42352D891877E4AF0011CA48 /* NSObject+associatedObject.m in Sources */,
+				42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */,
 				42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */,
 				42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */,
 			);
