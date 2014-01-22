@@ -32,7 +32,6 @@
 		420D1AD2165BF54D0097EE03 /* NSString+numberValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC2165BF54D0097EE03 /* NSString+numberValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42352D601877DC700011CA48 /* TXZeroingWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D5E1877DC700011CA48 /* TXZeroingWeakProxy.h */; };
 		42352D661877E46C0011CA48 /* TXMutableWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D621877E46C0011CA48 /* TXMutableWeakArray.h */; };
 		42352D671877E46C0011CA48 /* TXMutableWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D631877E46C0011CA48 /* TXMutableWeakArray.m */; };
 		42352D681877E46C0011CA48 /* TXMutableWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */; };
@@ -70,7 +69,6 @@
 		42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */; };
 		42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */; };
 		42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CB9183DB08900967368 /* NSObject+invokeSafely.m */; };
-		42352D8D1877E4AF0011CA48 /* TXZeroingWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D5F1877DC700011CA48 /* TXZeroingWeakProxy.m */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5417C935A9007AAB83 /* Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5017C933F8007AAB83 /* Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5517C935AB007AAB83 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C4F17C933AC007AAB83 /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,8 +150,6 @@
 		420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+plistValue.m"; sourceTree = "<group>"; };
 		42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+objectForKeyedSubscript.h"; sourceTree = "<group>"; };
 		42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMapTable+objectForKeyedSubscript.m"; sourceTree = "<group>"; };
-		42352D5E1877DC700011CA48 /* TXZeroingWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXZeroingWeakProxy.h; sourceTree = "<group>"; };
-		42352D5F1877DC700011CA48 /* TXZeroingWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXZeroingWeakProxy.m; sourceTree = "<group>"; };
 		42352D621877E46C0011CA48 /* TXMutableWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakArray.h; sourceTree = "<group>"; };
 		42352D631877E46C0011CA48 /* TXMutableWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakArray.m; sourceTree = "<group>"; };
 		42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakDictionary.h; sourceTree = "<group>"; };
@@ -476,8 +472,6 @@
 				42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */,
 				42877CB8183DB08900967368 /* NSObject+invokeSafely.h */,
 				42877CB9183DB08900967368 /* NSObject+invokeSafely.m */,
-				42352D5E1877DC700011CA48 /* TXZeroingWeakProxy.h */,
-				42352D5F1877DC700011CA48 /* TXZeroingWeakProxy.m */,
 			);
 			path = "Other Extensions";
 			sourceTree = "<group>";
@@ -511,7 +505,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42352D601877DC700011CA48 /* TXZeroingWeakProxy.h in Headers */,
 				42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */,
 				42719C6517C9386A007AAB83 /* Collection.h in Headers */,
 				42719C6017C93855007AAB83 /* NSDictionary+entrySet.h in Headers */,
@@ -728,7 +721,6 @@
 				42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */,
 				42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */,
 				42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */,
-				42352D8D1877E4AF0011CA48 /* TXZeroingWeakProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
