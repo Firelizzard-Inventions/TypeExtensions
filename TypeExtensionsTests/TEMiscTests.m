@@ -141,4 +141,14 @@
 	@catch (NSException *exception) { }
 }
 
+- (void)testSingleton
+{
+	id s1 = [NSObject_Singleton sharedInstance];
+	id s2 = [s1 copyWithZone:[self zone]];
+	id s3 = [[NSObject_Singleton allocWithZone:[self zone]] init];
+	
+	if (s1 != s2 || s2 != s3)
+		XCTFail(@"Sington pattern broken");
+}
+
 @end

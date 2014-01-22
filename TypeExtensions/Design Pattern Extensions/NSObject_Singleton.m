@@ -8,11 +8,20 @@
 
 #import "NSObject_Singleton.h"
 
+#import "NSObject+associatedObject.h"
+
+#define kSingletonKey "com.firelizzard.TypeExtensions.Misc.Singleton.key"
+
 @implementation NSObject_Singleton
 
 + (id)sharedInstance
 {
-	return [[super allocWithZone:NULL] init];
+	id shared = [self associatedObjectForKey:kSingletonKey];
+	
+	if (!shared)
+		[self setAssociatedObject:(shared = [[super allocWithZone:NULL] init]) forKey:kSingletonKey];
+	
+	return shared;
 }
 
 + (id)allocWithZone:(NSZone *)zone
@@ -22,21 +31,6 @@
 
 - (id)copyWithZone:(NSZone *)zone {
 	return self;
-}
-
-- (id)retain
-{
-	return self;
-}
-
-- (id)autorelease
-{
-	return self;
-}
-
-- (oneway void)release
-{
-	// don't release
 }
 
 @end

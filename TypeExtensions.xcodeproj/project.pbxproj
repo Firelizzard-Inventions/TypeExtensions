@@ -20,94 +20,95 @@
 		42026AEB183EA07900B1F530 /* TypeExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CC9183E8EA400967368 /* TypeExtensionsTests.m */; };
 		42026AEC183EA16500B1F530 /* TypeExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420D1A9C165BF5020097EE03 /* TypeExtensions.framework */; };
 		4202873316CC241600F2C92A /* NSString+dateValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873116CC241600F2C92A /* NSString+dateValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4202873416CC241600F2C92A /* NSString+dateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873216CC241600F2C92A /* NSString+dateValue.m */; };
 		4202873716CC245E00F2C92A /* NSDate+stringValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873516CC245E00F2C92A /* NSDate+stringValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4202873816CC245E00F2C92A /* NSDate+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873616CC245E00F2C92A /* NSDate+stringValue.m */; };
 		4205F9FA1851329100051E68 /* TXBTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 4205F9F81851329100051E68 /* TXBTree.h */; };
-		4205F9FB1851329100051E68 /* TXBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4205F9F91851329100051E68 /* TXBTree.m */; };
 		420952B0185054CF006E904A /* TXBijectiveDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 420952AE185054CF006E904A /* TXBijectiveDictionary.h */; };
-		420952B1185054CF006E904A /* TXBijectiveDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 420952AF185054CF006E904A /* TXBijectiveDictionary.m */; };
 		420D1AA0165BF5020097EE03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420D1A9F165BF5020097EE03 /* Cocoa.framework */; };
 		420D1AAA165BF5020097EE03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 420D1AA8165BF5020097EE03 /* InfoPlist.strings */; };
 		420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AB5165BF54D0097EE03 /* NSArray+orNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1AC7165BF54D0097EE03 /* NSArray+orNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AB6165BF54D0097EE03 /* NSArray+orNull.m */; };
 		420D1AC8165BF54D0097EE03 /* NSObject+isNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AB7165BF54D0097EE03 /* NSObject+isNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1AC9165BF54D0097EE03 /* NSObject+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AB8165BF54D0097EE03 /* NSObject+isNull.m */; };
 		420D1ACA165BF54D0097EE03 /* NSString+isEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AB9165BF54D0097EE03 /* NSString+isEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1ACB165BF54D0097EE03 /* NSString+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1ABA165BF54D0097EE03 /* NSString+isEmpty.m */; };
 		420D1ACC165BF54D0097EE03 /* NSDictionary+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1ABC165BF54D0097EE03 /* NSDictionary+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1ACD165BF54D0097EE03 /* NSDictionary+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1ABD165BF54D0097EE03 /* NSDictionary+plistValue.m */; };
 		420D1ACE165BF54D0097EE03 /* NSString+dataValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1ABE165BF54D0097EE03 /* NSString+dataValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1ACF165BF54D0097EE03 /* NSString+dataValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1ABF165BF54D0097EE03 /* NSString+dataValue.m */; };
 		420D1AD0165BF54D0097EE03 /* NSString+isNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC0165BF54D0097EE03 /* NSString+isNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1AD1165BF54D0097EE03 /* NSString+isNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC1165BF54D0097EE03 /* NSString+isNumber.m */; };
 		420D1AD2165BF54D0097EE03 /* NSString+numberValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC2165BF54D0097EE03 /* NSString+numberValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1AD3165BF54D0097EE03 /* NSString+numberValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */; };
 		420D1AD4165BF54D0097EE03 /* NSString+plistValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AC4165BF54D0097EE03 /* NSString+plistValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420D1AD5165BF54D0097EE03 /* NSString+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */; };
 		42352D3518765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42352D3618765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */; };
-		42352D471877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D461877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h */; };
+		42352D601877DC700011CA48 /* TXZeroingWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D5E1877DC700011CA48 /* TXZeroingWeakProxy.h */; };
+		42352D661877E46C0011CA48 /* TXMutableWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D621877E46C0011CA48 /* TXMutableWeakArray.h */; };
+		42352D671877E46C0011CA48 /* TXMutableWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D631877E46C0011CA48 /* TXMutableWeakArray.m */; };
+		42352D681877E46C0011CA48 /* TXMutableWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */; };
+		42352D691877E46C0011CA48 /* TXMutableWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */; };
+		42352D6A1877E4AF0011CA48 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */; };
+		42352D6B1877E4AF0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */; };
+		42352D6C1877E4AF0011CA48 /* TXBijectiveDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 420952AF185054CF006E904A /* TXBijectiveDictionary.m */; };
+		42352D6D1877E4AF0011CA48 /* TXBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4205F9F91851329100051E68 /* TXBTree.m */; };
+		42352D6E1877E4AF0011CA48 /* NSObject+abstractClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DB17C932F50045A398 /* NSObject+abstractClass.m */; };
+		42352D6F1877E4AF0011CA48 /* NSObject+abstractProtocolConformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DD17C932F50045A398 /* NSObject+abstractProtocolConformer.m */; };
+		42352D701877E4AF0011CA48 /* NSObject+supersequentImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DF17C932F50045A398 /* NSObject+supersequentImplementation.m */; };
+		42352D711877E4AF0011CA48 /* NSObject_Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E117C932F50045A398 /* NSObject_Singleton.m */; };
+		42352D721877E4AF0011CA48 /* NSNull+nullForProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E417C932F50045A398 /* NSNull+nullForProtocol.m */; };
+		42352D731877E4AF0011CA48 /* NSObject+methodDescriptionForSelectorInProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E617C932F50045A398 /* NSObject+methodDescriptionForSelectorInProtocol.m */; };
+		42352D741877E4AF0011CA48 /* NSObject_ProtocolConformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E817C932F50045A398 /* NSObject_ProtocolConformer.m */; };
+		42352D751877E4AF0011CA48 /* NSString+characterAtIndexSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307EB17C932F50045A398 /* NSString+characterAtIndexSubscript.m */; };
+		42352D761877E4AF0011CA48 /* NSString+firstLetterCaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307ED17C932F50045A398 /* NSString+firstLetterCaseString.m */; };
+		42352D771877E4AF0011CA48 /* NSString+isEqualToStringIgnoreCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307EF17C932F50045A398 /* NSString+isEqualToStringIgnoreCase.m */; };
+		42352D781877E4AF0011CA48 /* NSString+random.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C6B17C93B66007AAB83 /* NSString+random.m */; };
+		42352D791877E4AF0011CA48 /* NSNotificationCenter+errorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034018482D9500303ED4 /* NSNotificationCenter+errorCenter.m */; };
+		42352D7A1877E4AF0011CA48 /* NSObject+isNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AB8165BF54D0097EE03 /* NSObject+isNull.m */; };
+		42352D7B1877E4AF0011CA48 /* NSString+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1ABA165BF54D0097EE03 /* NSString+isEmpty.m */; };
+		42352D7C1877E4AF0011CA48 /* NSArray+orNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AB6165BF54D0097EE03 /* NSArray+orNull.m */; };
+		42352D7D1877E4AF0011CA48 /* NSString+orNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291FF3716C57EA4000538EF /* NSString+orNull.m */; };
+		42352D7E1877E4AF0011CA48 /* NSObject_KVCArrayForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034618482DA700303ED4 /* NSObject_KVCArrayForwarding.m */; };
+		42352D7F1877E4AF0011CA48 /* NSObject_KVCUndefined.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034818482DA700303ED4 /* NSObject_KVCUndefined.m */; };
+		42352D801877E4AF0011CA48 /* NSString+isNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC1165BF54D0097EE03 /* NSString+isNumber.m */; };
+		42352D811877E4AF0011CA48 /* NSString+urlValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */; };
+		42352D821877E4AF0011CA48 /* NSString+numberValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC3165BF54D0097EE03 /* NSString+numberValue.m */; };
+		42352D831877E4AF0011CA48 /* NSString+dataValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1ABF165BF54D0097EE03 /* NSString+dataValue.m */; };
+		42352D841877E4AF0011CA48 /* NSData+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF306165DFBE6003F26DA /* NSData+stringValue.m */; };
+		42352D851877E4AF0011CA48 /* NSString+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */; };
+		42352D861877E4AF0011CA48 /* NSDictionary+plistValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D1ABD165BF54D0097EE03 /* NSDictionary+plistValue.m */; };
+		42352D871877E4AF0011CA48 /* NSString+dateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873216CC241600F2C92A /* NSString+dateValue.m */; };
+		42352D881877E4AF0011CA48 /* NSDate+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4202873616CC245E00F2C92A /* NSDate+stringValue.m */; };
+		42352D891877E4AF0011CA48 /* NSObject+associatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA6183DAC4100967368 /* NSObject+associatedObject.m */; };
+		42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */; };
+		42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */; };
+		42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CB9183DB08900967368 /* NSObject+invokeSafely.m */; };
+		42352D8D1877E4AF0011CA48 /* TXZeroingWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42352D5F1877DC700011CA48 /* TXZeroingWeakProxy.m */; };
 		42719C5317C935A6007AAB83 /* Design.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5117C9343C007AAB83 /* Design.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5417C935A9007AAB83 /* Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5017C933F8007AAB83 /* Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C5517C935AB007AAB83 /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C4F17C933AC007AAB83 /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C6017C93855007AAB83 /* NSDictionary+entrySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C5C17C93855007AAB83 /* NSDictionary+entrySet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C6117C93855007AAB83 /* NSDictionary+entrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */; };
 		42719C6517C9386A007AAB83 /* Collection.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6417C9386A007AAB83 /* Collection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42719C6C17C93B66007AAB83 /* NSString+random.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6A17C93B66007AAB83 /* NSString+random.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C6D17C93B66007AAB83 /* NSString+random.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C6B17C93B66007AAB83 /* NSString+random.m */; };
-		42719C7017C9450A007AAB83 /* TXMutableWeakArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C7117C9450A007AAB83 /* TXMutableWeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */; };
-		42719C7917C94F2A007AAB83 /* TXMutableWeakDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42719C7A17C94F2A007AAB83 /* TXMutableWeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42719C7817C94F2A007AAB83 /* TXMutableWeakDictionary.m */; };
 		427307F017C932F50045A398 /* NSObject+abstractClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307DA17C932F50045A398 /* NSObject+abstractClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307F117C932F50045A398 /* NSObject+abstractClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DB17C932F50045A398 /* NSObject+abstractClass.m */; };
 		427307F217C932F50045A398 /* NSObject+abstractProtocolConformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307DC17C932F50045A398 /* NSObject+abstractProtocolConformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307F317C932F50045A398 /* NSObject+abstractProtocolConformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DD17C932F50045A398 /* NSObject+abstractProtocolConformer.m */; };
 		427307F417C932F50045A398 /* NSObject+supersequentImplementation.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307DE17C932F50045A398 /* NSObject+supersequentImplementation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307F517C932F50045A398 /* NSObject+supersequentImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307DF17C932F50045A398 /* NSObject+supersequentImplementation.m */; };
 		427307F617C932F50045A398 /* NSObject_Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307E017C932F50045A398 /* NSObject_Singleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307F717C932F50045A398 /* NSObject_Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E117C932F50045A398 /* NSObject_Singleton.m */; };
 		427307F817C932F50045A398 /* NSNull+nullForProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307E317C932F50045A398 /* NSNull+nullForProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307F917C932F50045A398 /* NSNull+nullForProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E417C932F50045A398 /* NSNull+nullForProtocol.m */; };
 		427307FA17C932F50045A398 /* NSObject+methodDescriptionForSelectorInProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307E517C932F50045A398 /* NSObject+methodDescriptionForSelectorInProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307FB17C932F50045A398 /* NSObject+methodDescriptionForSelectorInProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E617C932F50045A398 /* NSObject+methodDescriptionForSelectorInProtocol.m */; };
 		427307FC17C932F50045A398 /* NSObject_ProtocolConformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307E717C932F50045A398 /* NSObject_ProtocolConformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307FD17C932F50045A398 /* NSObject_ProtocolConformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307E817C932F50045A398 /* NSObject_ProtocolConformer.m */; };
 		427307FE17C932F50045A398 /* NSString+characterAtIndexSubscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307EA17C932F50045A398 /* NSString+characterAtIndexSubscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427307FF17C932F50045A398 /* NSString+characterAtIndexSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307EB17C932F50045A398 /* NSString+characterAtIndexSubscript.m */; };
 		4273080017C932F50045A398 /* NSString+firstLetterCaseString.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307EC17C932F50045A398 /* NSString+firstLetterCaseString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4273080117C932F50045A398 /* NSString+firstLetterCaseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307ED17C932F50045A398 /* NSString+firstLetterCaseString.m */; };
 		4273080217C932F50045A398 /* NSString+isEqualToStringIgnoreCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 427307EE17C932F50045A398 /* NSString+isEqualToStringIgnoreCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4273080317C932F50045A398 /* NSString+isEqualToStringIgnoreCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 427307EF17C932F50045A398 /* NSString+isEqualToStringIgnoreCase.m */; };
 		42877CAF183DAC4100967368 /* Misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA4183DAC4100967368 /* Misc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42877CB0183DAC4100967368 /* NSObject+associatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA5183DAC4100967368 /* NSObject+associatedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42877CB1183DAC4100967368 /* NSObject+associatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA6183DAC4100967368 /* NSObject+associatedObject.m */; };
 		42877CB2183DAC4100967368 /* NSObject+DeallocListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA7183DAC4100967368 /* NSObject+DeallocListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42877CB3183DAC4100967368 /* NSObject+DeallocListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CA8183DAC4100967368 /* NSObject+DeallocListener.m */; };
 		42877CB4183DAC4100967368 /* NSObject+invocationForSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CA9183DAC4100967368 /* NSObject+invocationForSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42877CB5183DAC4100967368 /* NSObject+invocationForSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */; };
 		42877CBA183DB08900967368 /* NSObject+invokeSafely.h in Headers */ = {isa = PBXBuildFile; fileRef = 42877CB8183DB08900967368 /* NSObject+invokeSafely.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42877CBB183DB08900967368 /* NSObject+invokeSafely.m in Sources */ = {isa = PBXBuildFile; fileRef = 42877CB9183DB08900967368 /* NSObject+invokeSafely.m */; };
 		428D034118482D9500303ED4 /* Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D033E18482D9500303ED4 /* Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428D034218482D9500303ED4 /* NSNotificationCenter+errorCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D033F18482D9500303ED4 /* NSNotificationCenter+errorCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428D034318482D9500303ED4 /* NSNotificationCenter+errorCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034018482D9500303ED4 /* NSNotificationCenter+errorCenter.m */; };
 		428D034918482DA700303ED4 /* KVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D034418482DA700303ED4 /* KVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428D034A18482DA700303ED4 /* NSObject_KVCArrayForwarding.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D034518482DA700303ED4 /* NSObject_KVCArrayForwarding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428D034B18482DA700303ED4 /* NSObject_KVCArrayForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034618482DA700303ED4 /* NSObject_KVCArrayForwarding.m */; };
 		428D034C18482DA700303ED4 /* NSObject_KVCUndefined.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D034718482DA700303ED4 /* NSObject_KVCUndefined.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428D034D18482DA700303ED4 /* NSObject_KVCUndefined.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D034818482DA700303ED4 /* NSObject_KVCUndefined.m */; };
 		4290F08C1849A31400C67769 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4290F08A1849A31400C67769 /* LICENSE */; };
 		4290F08D1849A31400C67769 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4290F08B1849A31400C67769 /* README.md */; };
 		4291FF3816C57EA4000538EF /* NSString+orNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 4291FF3616C57EA4000538EF /* NSString+orNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4291FF3916C57EA4000538EF /* NSString+orNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291FF3716C57EA4000538EF /* NSString+orNull.m */; };
 		42AC0B19165CA0B2002E846E /* Null.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AC0B16165C9FBB002E846E /* Null.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 420D1AAC165BF5020097EE03 /* TypeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42BA0C3516707B2C0066DD1A /* NSString+urlValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BA0C3316707B2C0066DD1A /* NSString+urlValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42BA0C3616707B2C0066DD1A /* NSString+urlValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BA0C3416707B2C0066DD1A /* NSString+urlValue.m */; };
 		42D8076016CE206A002885D0 /* Value.h in Headers */ = {isa = PBXBuildFile; fileRef = 4202873016CC23F900F2C92A /* Value.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DFF307165DFBE6003F26DA /* NSData+stringValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFF305165DFBE6003F26DA /* NSData+stringValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42DFF308165DFBE6003F26DA /* NSData+stringValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF306165DFBE6003F26DA /* NSData+stringValue.m */; };
 		42EC2955183F115800AA5BDA /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EC2954183F115800AA5BDA /* Dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -159,7 +160,12 @@
 		420D1AC5165BF54D0097EE03 /* NSString+plistValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+plistValue.m"; sourceTree = "<group>"; };
 		42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+objectForKeyedSubscript.h"; sourceTree = "<group>"; };
 		42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMapTable+objectForKeyedSubscript.m"; sourceTree = "<group>"; };
-		42352D461877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArrayMutable_NonRetaining_Zeroing+Private.h"; sourceTree = "<group>"; };
+		42352D5E1877DC700011CA48 /* TXZeroingWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXZeroingWeakProxy.h; sourceTree = "<group>"; };
+		42352D5F1877DC700011CA48 /* TXZeroingWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXZeroingWeakProxy.m; sourceTree = "<group>"; };
+		42352D621877E46C0011CA48 /* TXMutableWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakArray.h; sourceTree = "<group>"; };
+		42352D631877E46C0011CA48 /* TXMutableWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakArray.m; sourceTree = "<group>"; };
+		42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakDictionary.h; sourceTree = "<group>"; };
+		42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakDictionary.m; sourceTree = "<group>"; };
 		42719C4F17C933AC007AAB83 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		42719C5017C933F8007AAB83 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
 		42719C5117C9343C007AAB83 /* Design.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Design.h; sourceTree = "<group>"; };
@@ -168,10 +174,6 @@
 		42719C6417C9386A007AAB83 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
 		42719C6A17C93B66007AAB83 /* NSString+random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+random.h"; sourceTree = "<group>"; };
 		42719C6B17C93B66007AAB83 /* NSString+random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+random.m"; sourceTree = "<group>"; };
-		42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakArray.h; sourceTree = "<group>"; };
-		42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakArray.m; sourceTree = "<group>"; };
-		42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMutableWeakDictionary.h; sourceTree = "<group>"; };
-		42719C7817C94F2A007AAB83 /* TXMutableWeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMutableWeakDictionary.m; sourceTree = "<group>"; };
 		427307DA17C932F50045A398 /* NSObject+abstractClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+abstractClass.h"; sourceTree = "<group>"; };
 		427307DB17C932F50045A398 /* NSObject+abstractClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+abstractClass.m"; sourceTree = "<group>"; };
 		427307DC17C932F50045A398 /* NSObject+abstractProtocolConformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+abstractProtocolConformer.h"; sourceTree = "<group>"; };
@@ -381,20 +383,15 @@
 		42719C5B17C93855007AAB83 /* Collection Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				42352D461877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h */,
 				42719C6417C9386A007AAB83 /* Collection.h */,
 				42719C5C17C93855007AAB83 /* NSDictionary+entrySet.h */,
 				42719C5D17C93855007AAB83 /* NSDictionary+entrySet.m */,
-				42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */,
-				42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */,
-				42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */,
-				42719C7817C94F2A007AAB83 /* TXMutableWeakDictionary.m */,
 				42352D3318765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.h */,
 				42352D3418765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m */,
-				42719C6E17C9450A007AAB83 /* TXMutableWeakArray.h */,
-				42719C6F17C9450A007AAB83 /* TXMutableWeakArray.m */,
-				42719C7717C94F2A007AAB83 /* TXMutableWeakDictionary.h */,
-				42719C7817C94F2A007AAB83 /* TXMutableWeakDictionary.m */,
+				42352D621877E46C0011CA48 /* TXMutableWeakArray.h */,
+				42352D631877E46C0011CA48 /* TXMutableWeakArray.m */,
+				42352D641877E46C0011CA48 /* TXMutableWeakDictionary.h */,
+				42352D651877E46C0011CA48 /* TXMutableWeakDictionary.m */,
 				420952AE185054CF006E904A /* TXBijectiveDictionary.h */,
 				420952AF185054CF006E904A /* TXBijectiveDictionary.m */,
 				4205F9F81851329100051E68 /* TXBTree.h */,
@@ -491,6 +488,8 @@
 				42877CAA183DAC4100967368 /* NSObject+invocationForSelector.m */,
 				42877CB8183DB08900967368 /* NSObject+invokeSafely.h */,
 				42877CB9183DB08900967368 /* NSObject+invokeSafely.m */,
+				42352D5E1877DC700011CA48 /* TXZeroingWeakProxy.h */,
+				42352D5F1877DC700011CA48 /* TXZeroingWeakProxy.m */,
 			);
 			path = "Other Extensions";
 			sourceTree = "<group>";
@@ -524,14 +523,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42352D601877DC700011CA48 /* TXZeroingWeakProxy.h in Headers */,
 				42AC0B1B165CA111002E846E /* TypeExtensions.h in Headers */,
 				42719C6517C9386A007AAB83 /* Collection.h in Headers */,
 				42719C6017C93855007AAB83 /* NSDictionary+entrySet.h in Headers */,
-				42719C7017C9450A007AAB83 /* TXMutableWeakArray.h in Headers */,
-				42719C7917C94F2A007AAB83 /* TXMutableWeakDictionary.h in Headers */,
-				42719C7017C9450A007AAB83 /* TXMutableWeakArray.h in Headers */,
 				4205F9FA1851329100051E68 /* TXBTree.h in Headers */,
-				42719C7917C94F2A007AAB83 /* TXMutableWeakDictionary.h in Headers */,
 				42719C5317C935A6007AAB83 /* Design.h in Headers */,
 				427307F017C932F50045A398 /* NSObject+abstractClass.h in Headers */,
 				427307F217C932F50045A398 /* NSObject+abstractProtocolConformer.h in Headers */,
@@ -548,8 +544,9 @@
 				42719C6C17C93B66007AAB83 /* NSString+random.h in Headers */,
 				428D034118482D9500303ED4 /* Notification.h in Headers */,
 				428D034218482D9500303ED4 /* NSNotificationCenter+errorCenter.h in Headers */,
+				42352D681877E46C0011CA48 /* TXMutableWeakDictionary.h in Headers */,
 				42AC0B19165CA0B2002E846E /* Null.h in Headers */,
-				42352D471877C58A0011CA48 /* NSArrayMutable_NonRetaining_Zeroing+Private.h in Headers */,
+				42352D661877E46C0011CA48 /* TXMutableWeakArray.h in Headers */,
 				420D1AC8165BF54D0097EE03 /* NSObject+isNull.h in Headers */,
 				420D1ACA165BF54D0097EE03 /* NSString+isEmpty.h in Headers */,
 				420D1AC6165BF54D0097EE03 /* NSArray+orNull.h in Headers */,
@@ -710,45 +707,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42719C6117C93855007AAB83 /* NSDictionary+entrySet.m in Sources */,
-				42719C7117C9450A007AAB83 /* TXMutableWeakArray.m in Sources */,
-				42719C7A17C94F2A007AAB83 /* TXMutableWeakDictionary.m in Sources */,
-				42719C7117C9450A007AAB83 /* TXMutableWeakArray.m in Sources */,
-				42719C7A17C94F2A007AAB83 /* TXMutableWeakDictionary.m in Sources */,
-				427307F117C932F50045A398 /* NSObject+abstractClass.m in Sources */,
-				427307F317C932F50045A398 /* NSObject+abstractProtocolConformer.m in Sources */,
-				427307F517C932F50045A398 /* NSObject+supersequentImplementation.m in Sources */,
-				427307F717C932F50045A398 /* NSObject_Singleton.m in Sources */,
-				427307F917C932F50045A398 /* NSNull+nullForProtocol.m in Sources */,
-				427307FB17C932F50045A398 /* NSObject+methodDescriptionForSelectorInProtocol.m in Sources */,
-				427307FD17C932F50045A398 /* NSObject_ProtocolConformer.m in Sources */,
-				427307FF17C932F50045A398 /* NSString+characterAtIndexSubscript.m in Sources */,
-				4273080117C932F50045A398 /* NSString+firstLetterCaseString.m in Sources */,
-				42352D3618765FFA0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */,
-				420952B1185054CF006E904A /* TXBijectiveDictionary.m in Sources */,
-				4273080317C932F50045A398 /* NSString+isEqualToStringIgnoreCase.m in Sources */,
-				42719C6D17C93B66007AAB83 /* NSString+random.m in Sources */,
-				428D034318482D9500303ED4 /* NSNotificationCenter+errorCenter.m in Sources */,
-				420D1AC9165BF54D0097EE03 /* NSObject+isNull.m in Sources */,
-				420D1ACB165BF54D0097EE03 /* NSString+isEmpty.m in Sources */,
-				420D1AC7165BF54D0097EE03 /* NSArray+orNull.m in Sources */,
-				4291FF3916C57EA4000538EF /* NSString+orNull.m in Sources */,
-				428D034B18482DA700303ED4 /* NSObject_KVCArrayForwarding.m in Sources */,
-				428D034D18482DA700303ED4 /* NSObject_KVCUndefined.m in Sources */,
-				420D1AD1165BF54D0097EE03 /* NSString+isNumber.m in Sources */,
-				42BA0C3616707B2C0066DD1A /* NSString+urlValue.m in Sources */,
-				420D1AD3165BF54D0097EE03 /* NSString+numberValue.m in Sources */,
-				420D1ACF165BF54D0097EE03 /* NSString+dataValue.m in Sources */,
-				42DFF308165DFBE6003F26DA /* NSData+stringValue.m in Sources */,
-				420D1AD5165BF54D0097EE03 /* NSString+plistValue.m in Sources */,
-				420D1ACD165BF54D0097EE03 /* NSDictionary+plistValue.m in Sources */,
-				4202873416CC241600F2C92A /* NSString+dateValue.m in Sources */,
-				4202873816CC245E00F2C92A /* NSDate+stringValue.m in Sources */,
-				42877CB1183DAC4100967368 /* NSObject+associatedObject.m in Sources */,
-				42877CB3183DAC4100967368 /* NSObject+DeallocListener.m in Sources */,
-				4205F9FB1851329100051E68 /* TXBTree.m in Sources */,
-				42877CB5183DAC4100967368 /* NSObject+invocationForSelector.m in Sources */,
-				42877CBB183DB08900967368 /* NSObject+invokeSafely.m in Sources */,
+				42352D671877E46C0011CA48 /* TXMutableWeakArray.m in Sources */,
+				42352D691877E46C0011CA48 /* TXMutableWeakDictionary.m in Sources */,
+				42352D6A1877E4AF0011CA48 /* NSDictionary+entrySet.m in Sources */,
+				42352D6B1877E4AF0011CA48 /* NSMapTable+objectForKeyedSubscript.m in Sources */,
+				42352D6C1877E4AF0011CA48 /* TXBijectiveDictionary.m in Sources */,
+				42352D6D1877E4AF0011CA48 /* TXBTree.m in Sources */,
+				42352D6E1877E4AF0011CA48 /* NSObject+abstractClass.m in Sources */,
+				42352D6F1877E4AF0011CA48 /* NSObject+abstractProtocolConformer.m in Sources */,
+				42352D701877E4AF0011CA48 /* NSObject+supersequentImplementation.m in Sources */,
+				42352D711877E4AF0011CA48 /* NSObject_Singleton.m in Sources */,
+				42352D721877E4AF0011CA48 /* NSNull+nullForProtocol.m in Sources */,
+				42352D731877E4AF0011CA48 /* NSObject+methodDescriptionForSelectorInProtocol.m in Sources */,
+				42352D741877E4AF0011CA48 /* NSObject_ProtocolConformer.m in Sources */,
+				42352D751877E4AF0011CA48 /* NSString+characterAtIndexSubscript.m in Sources */,
+				42352D761877E4AF0011CA48 /* NSString+firstLetterCaseString.m in Sources */,
+				42352D771877E4AF0011CA48 /* NSString+isEqualToStringIgnoreCase.m in Sources */,
+				42352D781877E4AF0011CA48 /* NSString+random.m in Sources */,
+				42352D791877E4AF0011CA48 /* NSNotificationCenter+errorCenter.m in Sources */,
+				42352D7A1877E4AF0011CA48 /* NSObject+isNull.m in Sources */,
+				42352D7B1877E4AF0011CA48 /* NSString+isEmpty.m in Sources */,
+				42352D7C1877E4AF0011CA48 /* NSArray+orNull.m in Sources */,
+				42352D7D1877E4AF0011CA48 /* NSString+orNull.m in Sources */,
+				42352D7E1877E4AF0011CA48 /* NSObject_KVCArrayForwarding.m in Sources */,
+				42352D7F1877E4AF0011CA48 /* NSObject_KVCUndefined.m in Sources */,
+				42352D801877E4AF0011CA48 /* NSString+isNumber.m in Sources */,
+				42352D811877E4AF0011CA48 /* NSString+urlValue.m in Sources */,
+				42352D821877E4AF0011CA48 /* NSString+numberValue.m in Sources */,
+				42352D831877E4AF0011CA48 /* NSString+dataValue.m in Sources */,
+				42352D841877E4AF0011CA48 /* NSData+stringValue.m in Sources */,
+				42352D851877E4AF0011CA48 /* NSString+plistValue.m in Sources */,
+				42352D861877E4AF0011CA48 /* NSDictionary+plistValue.m in Sources */,
+				42352D871877E4AF0011CA48 /* NSString+dateValue.m in Sources */,
+				42352D881877E4AF0011CA48 /* NSDate+stringValue.m in Sources */,
+				42352D891877E4AF0011CA48 /* NSObject+associatedObject.m in Sources */,
+				42352D8A1877E4AF0011CA48 /* NSObject+DeallocListener.m in Sources */,
+				42352D8B1877E4AF0011CA48 /* NSObject+invocationForSelector.m in Sources */,
+				42352D8C1877E4AF0011CA48 /* NSObject+invokeSafely.m in Sources */,
+				42352D8D1877E4AF0011CA48 /* TXZeroingWeakProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
